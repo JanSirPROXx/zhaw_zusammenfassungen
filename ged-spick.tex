@@ -1,0 +1,357 @@
+% ---------------------------------------------------------------------------
+%  GED · Spick Woche 1 – Kraft, Bewegung, Ladung, Energie
+%  Bezeichnungen, Symbole und Einheiten wie in Vorlesung, Übung 1 und
+%  Musterlösung (ZHAW GED, HS 2026). Kompilieren: pdflatex ged-woche1.tex
+% ---------------------------------------------------------------------------
+\documentclass[8pt,a4paper]{extarticle}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[a4paper,margin=9mm,top=8mm,bottom=8mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{microtype}
+\usepackage{needspace}
+
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{4.5mm}
+\setlength{\columnseprule}{0.2pt}
+\setlength{\abovedisplayskip}{1pt}
+\setlength{\belowdisplayskip}{1pt}
+\pagestyle{empty}
+
+\definecolor{ak}{RGB}{0,100,166}
+\definecolor{gr}{RGB}{60,120,60}
+\definecolor{sand}{RGB}{215,205,180}
+
+% Abschnittstitel
+\newcommand{\T}[1]{%
+  \vspace{2.2mm plus 0.6mm}%
+  \noindent\colorbox{ak}{\color{white}\bfseries\small\,#1\,}\par
+  \vspace{0.8mm}\nobreak\ignorespaces}
+
+% kompakte 2-Spalten-Tabelle: Formel | Einheiten
+\newcommand{\FT}[1]{%
+  \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.44\linewidth}@{\hspace{3pt}}>{\raggedright\arraybackslash}p{0.52\linewidth}@{}}
+  #1\end{tabular}\par}
+
+% kompakte mehrspaltige Tabelle
+\newcommand{\RT}[2]{%
+  \begin{tabular}{@{}#1@{}}#2\end{tabular}\par}
+
+\newcommand{\hk}[1]{\textcolor{ak}{\textbf{#1}}}
+
+\begin{document}
+
+% ------------------------------------------------------------------ Kopf
+\begin{center}
+{\large\bfseries Zusammenfassung GED}\\[0.3mm]
+{\footnotesize Kraft · Bewegung · Ladung · Energie \quad|\quad Symbole und Bezeichnungen wie in Vorlesung, Übung 1 und Musterlösung \quad|\quad Dezimal\textbf{punkt} in den Unterlagen $=$ Dezimalkomma hier}
+\end{center}
+\vspace{-1.2mm}
+\hrule height 0.8pt
+\vspace{0.6mm}
+
+{\small\color{ak}\textbf{$\blacktriangleright$ Grundregel:} Zuerst \textbf{alles in SI-Einheiten ohne Vorsilben} umrechnen (Ausnahme: das kg trägt das «Kilo» im Namen) – dann rechnen. Dann kommt das Ergebnis automatisch in der richtigen Einheit heraus.}
+
+\vspace{1.2mm}
+\begin{multicols}{2}
+
+% ============================================================== Grössen
+\T{Grössen, Formeln, Einheiten}
+
+\FT{
+\hrule height 0pt
+\hk{Grösse} & \hk{Einheit} \\[0.4mm]
+Länge, Ort, Höhe $s$, $h$ & \hk{Basis:} $\mathrm{m}$ (Meter) \\
+Masse $m$ & \hk{Basis:} $\mathrm{kg}$ (Kilogramm) \\
+Zeit $t$ & \hk{Basis:} $\mathrm{s}$ (Sekunde) \\
+Strom $I$ (Woche 2) & \hk{Basis:} $\mathrm{A}$ (Ampere) \\[0.8mm]
+$v = \dfrac{\Delta s}{\Delta t}$ & $\mathrm{m/s}$ \\
+$a = \dfrac{\Delta v}{\Delta t}$ & $\mathrm{m/s^2}$ \\
+$F = ma$ & $\mathrm{N} = \dfrac{\mathrm{kg\,m}}{\mathrm{s^2}}$ \\
+$W = F s$, \ $E$, \ $E_{\text{kin}}$, \ $E_{\text{pot}}$ & $\mathrm{J} = \mathrm{N\,m} = \dfrac{\mathrm{kg\,m^2}}{\mathrm{s^2}}$ \\
+$U = \dfrac{E}{q}$ & $\mathrm{V} = \dfrac{\mathrm{J}}{\mathrm{C}}$ \\
+Ladung $q$, $Q$ & $\mathrm{C} = \mathrm{A\,s}$ (Woche 2) \\
+$F_{\mathrm{s}} = k\,(x-L)$ & $k$ in $\dfrac{\mathrm{N}}{\mathrm{m}} = \dfrac{\mathrm{kg}}{\mathrm{s^2}}$ \\
+$|F_{12}| = \gamma\dfrac{m_1m_2}{r^2}$ & $\gamma$ in $\dfrac{\mathrm{N\,m^2}}{\mathrm{kg^2}} = \dfrac{\mathrm{m^3}}{\mathrm{kg\,s^2}}$ \\[0.8mm]
+$\vec F = \begin{pmatrix}F_x\\F_y\\F_z\end{pmatrix}$ & $|\vec F| = \sqrt{F_x^2+F_y^2+F_z^2}$ \\
+}
+
+\vspace{1mm}
+\FT{
+\hrule height 0pt
+\hk{$[\ ]$ Einheitenangabe:} & nur Einheiten, das $\mathrm{m}$ darin ist der \textbf{Meter} (die Masse ist das kursive $m$) \\[0.6mm]
+$\Delta$ (ein Symbol!) & $\Delta s = s(t)-s_0$, \ $\Delta t = t-t_0$, \ $\Delta v = v(t)-v_0$; \ \textbf{Ende $-$ Anfang} \\
+«zurückgelegter Weg» $\neq \Delta s$ & $\Delta s$ kann negativ oder $0$ sein \\
+}
+
+% ============================================================== Vorsilben
+\T{Vorsilben \ \& \ Zehnerpotenzen}
+
+\RT{@{}l@{\ }l@{\ }l@{\hspace{2.5mm}}l@{\ }l@{\ }l@{}}{
+\hk{f} & $10^{-15}$ & Femto & \hk{k} & $10^{3}$ & Kilo \\
+\hk{n} & $10^{-9}$ & Nano & \hk{M} & $10^{6}$ & Mega \\
+$\mu$ & $10^{-6}$ & Mikro & \hk{G} & $10^{9}$ & Giga \\
+\hk{m} & $10^{-3}$ & Milli & \hk{c} & $10^{-2}$ & Zenti \\
+}
+
+\vspace{0.8mm}
+$\mathrm{M}$ (Mega) vs.\ $\mathrm{m}$ (Milli): Faktor $10^9$! \quad $10^a\cdot10^b=10^{a+b}$,\ \ $\dfrac{10^a}{10^b}=10^{a-b}$,\ \ $(10^a)^2=10^{2a}$.
+
+\vspace{0.8mm}
+$\text{Zahl} = \text{Vorfaktor}\cdot 10^{n}$ mit $1 \le \text{Vorfaktor} < 10$: \ $0{,}00042 = 4{,}2\cdot10^{-4}$
+
+\vspace{0.8mm}
+$\mathrm{kg\,m} = \mathrm{kg}\cdot\mathrm{m}$ (schmaler Abstand = mal). Klebung beachten: $\mathrm{m\,s^{-2}} = \mathrm{m/s^2}$, aber $\mathrm{ms^{-2}}$ wäre Milli! Geschwindigkeit lieber $\mathrm{m/s}$ schreiben.
+
+% ============================================================== Umrechnen
+\T{Umrechnen}
+
+\RT{@{}l@{\hspace{2mm}}l@{}}{
+$1\ \mathrm{km/h}$ & $=\dfrac{1}{3{,}6}\ \mathrm{m/s}$ \quad\hk{$\div 3{,}6$} \\
+$1\ \mathrm{m/s}$ & $=3{,}6\ \mathrm{km/h}$ \quad\hk{$\cdot\,3{,}6$} \\
+$1\ \mathrm{km}$ & $=10^3\ \mathrm{m}$ \\
+$1\ \mathrm{cm}$ & $=10^{-2}\ \mathrm{m}$ \\
+$1\ \mathrm{cm^2}$ & $=10^{-4}\ \mathrm{m^2}$ \ \ (Vorsilbe wird \textbf{mit}potenziert) \\
+$1\ \mathrm{g}$ & $=10^{-3}\ \mathrm{kg}$ \\
+$1\ \mathrm{h}$ & $=3600\ \mathrm{s}$, \quad $1\ \mathrm{min}=60\ \mathrm{s}$ \\[0.6mm]
+$1\ \mathrm{N}$ & $=1\ \mathrm{kg\,m/s^2}=\dfrac{\mathrm{kg\,m}}{\mathrm{s^2}}$ \\
+$1\ \mathrm{J}$ & $=1\ \mathrm{N\,m}=1\ \mathrm{kg\,m^2/s^2}$ \\
+$1\ \mathrm{V}$ & $=1\ \mathrm{J/C}$ \\
+$1\ \mathrm{C}$ & $=1\ \mathrm{A\,s}$ \\
+$1\ \mathrm{eV}$ & $=1{,}602\cdot10^{-19}\ \mathrm{J}$ \\[0.6mm]
+$\dfrac{\mathrm{N}}{\mathrm{kg}}$ & $=\dfrac{\mathrm{kg\,m/s^2}}{\mathrm{kg}}=\mathrm{m/s^2}$ \\
+$\dfrac{\mathrm{J}}{\mathrm{V}}$ & $=\dfrac{\mathrm{J}}{\mathrm{J/C}}=\mathrm{C}$ \\
+$\dfrac{\mathrm{N}}{\mathrm{m}}$ & $=\dfrac{\mathrm{kg\,m/s^2}}{\mathrm{m}}=\dfrac{\mathrm{kg}}{\mathrm{s^2}}$ \\
+}
+
+% ============================================================== Konstanten
+\columnbreak
+\T{Konstanten}
+
+\RT{@{}l@{\hspace{3mm}}l@{}}{
+$g$ & $9{,}81\ \mathrm{m/s^2}$ \ (Erdbeschleunigung, immer positiv) \\
+$\gamma$ & $6{,}67\cdot10^{-11}\ \mathrm{N\,m^2/kg^2}$ \\
+$e$ & $1{,}602\cdot10^{-19}\ \mathrm{C}$ \ (Elementarladung) \\
+$q_e$ & $=-e=-1{,}602\cdot10^{-19}\ \mathrm{C}$ \ (Elektron) \\
+$\varepsilon_0$ & $8{,}854\cdot10^{-12}\ \mathrm{C^2/(J\,m)}$ \\
+$k_e=\dfrac{1}{4\pi\varepsilon_0}$ & $\approx8{,}99\cdot10^9\ \mathrm{N\,m^2/C^2}$ \\
+$m_{\text{Erde}}$ & $5{,}97\cdot10^{24}\ \mathrm{kg}$ \\
+$r_{\text{Erde}}$ & $6{,}37\cdot10^{6}\ \mathrm{m}$ \\[0.8mm]
+\multicolumn{2}{@{}>{\raggedright\arraybackslash}p{0.96\linewidth}@{}}{%
+Achtung: Folie 32 hat den Tippfehler $\varepsilon_0=8{,}859\cdot10^{-12}$ – richtig ist $8{,}854$. \ $k_e$ nicht mit der Federkonstante $k$ verwechseln.} \\
+}
+
+% ============================================================== Kraft
+\T{Kraft \& Beschleunigung}
+
+\FT{
+$a=\dfrac{\Delta v}{\Delta t}$ & $a$ in $\mathrm{m/s^2}$, $\Delta v$ in $\mathrm{m/s}$, $\Delta t$ in $\mathrm{s}$ \\
+$F_{\text{res}} = ma$ & $F_{\text{res}}$ in $\mathrm{N}$, $m$ in $\mathrm{kg}$, $a$ in $\mathrm{m/s^2}$ \\
+$a=\dfrac{F_{\text{res}}}{m}$ & \\
+$F_{\text{res}} = F_1+F_2+F_3+\dots$ & eine Dimension: \textbf{Vorzeichen $=$ Richtung} \\
+$\vec F = m\vec a$ & komponentenweise: $F_x = ma_x$, \ $F_y=ma_y$, \ $F_z=ma_z$ \\
+$|F_g| = mg$ & Gewichtskraft in $\mathrm{N}$ – \textbf{nicht} in $\mathrm{kg}$! \\
+$F_g = -mg$ & wenn «oben positiv» (z.\,B. Wurf, $z$ nach oben) \\
+}
+
+\vspace{0.8mm}
+$F_{\text{res}}=0 \Rightarrow v$ bleibt konstant (auch $v=0$). \ «Bremsen» heisst $\Delta v<0$, also $F<0$.
+Nur die \textbf{resultierende} Kraft in $F=ma$ einsetzen, nie eine einzelne.
+
+% ============================================================== Bewegung
+\T{Gleichmässig beschleunigte Bewegung}
+
+$t_0 = 0$, \ $s_0 = s(0)$, \ $v_0 = v(0)$
+
+\FT{
+$v(t) = v_0 + a\,t$ & $v$ in $\mathrm{m/s}$, $v_0$ in $\mathrm{m/s}$, $a$ in $\mathrm{m/s^2}$, $t$ in $\mathrm{s}$ \\
+$s(t) = s_0 + v_0\,t + \dfrac{a}{2}t^2$ & $s$, $s_0$ in $\mathrm{m}$ \\
+$\Delta v = a\,\Delta t$ & \\
+$\bar v = v_0+\dfrac{a}{2}t$ & $s(t)-s_0 = \bar v\,t$ \\
+}
+
+\vspace{0.8mm}
+\hk{Gleichförmig} ($a=0$): \ \ $v(t)=v_0$, \ \ $s(t)=s_0+v_0 t$. \quad
+\hk{Fläche unter der $v$-$t$-Kurve} $= \Delta s$.
+
+\vspace{0.8mm}
+\hk{Start aus der Ruhe} ($v_0=0$, $s_0=0$, $t_0=0$):
+
+\FT{
+$v = a\,t$ & $a = \dfrac{v}{t}$ \quad $t = \dfrac{v}{a}$ \\
+$s = \dfrac{a}{2}t^2$ & $a = \dfrac{2s}{t^2}$ \quad $t=\sqrt{\dfrac{2s}{a}}$ \\
+$s = \dfrac{v^2}{2a}$ & $v=\sqrt{2as}$ \\
+$s = \dfrac{v\,t}{2}$ & \\
+}
+
+\vspace{0.8mm}
+\hk{Bremsen bis zum Stillstand} ($v(t)=v_0-|a|t$):
+
+\FT{
+$t_B = \dfrac{v_0}{|a|}$ & Bremszeit \\
+$s(t_B) = \dfrac{v_0^2}{2|a|}$ & Bremsweg \\
+}
+
+\vspace{0.8mm}
+\hk{Freier Fall} aus der Höhe $h$: \quad
+$v=\sqrt{2gh}$, \quad $t=\sqrt{\dfrac{2h}{g}}$, \quad $v=gt$.
+
+% ============================================================== Wurf
+\T{Wurf \ (jede Richtung für sich)}
+
+Achsen wie Folie 26/27: $x$ horizontal, \textbf{$z$ senkrecht nach oben}, \ $a=(0,0,-g)$.
+\emph{Übungsblatt Aufgabe 12: senkrechte Achse heisst $y$ und $v_{0,y} = v_{z,0}$.}
+Abwurfwinkel $\varphi$ gegenüber der Horizontalen.
+
+\FT{
+$v_{x,0} = v_0\cos\varphi$ & horizontal: \textbf{gleichförmig} \\
+$v_{z,0} = v_0\sin\varphi$ & vertikal: beschleunigt mit $-g$ \\
+$s_x(t) = v_{x,0}\,t$ & horizontal, $t$ in $\mathrm{s}$, $s_x$ in $\mathrm{m}$ \\
+$v_z(t) = v_{z,0}-g\,t$ & $v_z$ in $\mathrm{m/s}$ \\
+$s_z(t) = h+v_{z,0}t-\dfrac{g}{2}t^2$ & $h$ = Abwurfhöhe über dem Ziel \\
+}
+
+\vspace{0.8mm}
+Am höchsten Punkt: \ $v_x = v_{x,0}\neq0$, \ $v_z = 0$!
+
+\FT{
+$t_{\text{max}} = \dfrac{v_{z,0}}{g}$ & Zeit bis zum höchsten Punkt \\
+$h_{\text{max}} = \dfrac{v_{z,0}^2}{2g}$ & Höhe \textbf{über der Abwurfhöhe} $h$ \\
+$t_{\text{Flug}} = \dfrac{2v_{z,0}}{g} = 2t_{\text{max}}$ & Landung auf Höhe $h$ \\
+$R = v_{x,0}\cdot t_{\text{Flug}} = \dfrac{2v_{x,0}v_{z,0}}{g}$ & Reichweite \\
+}
+
+\vspace{0.8mm}
+Landung auf \emph{anderer} Höhe: \ $-\dfrac{g}{2}t_{\text{Flug}}^2+v_{z,0}t_{\text{Flug}}+h=0$ mit
+$t = \dfrac{-b\pm\sqrt{b^2-4ac}}{2a}$ (positives $t$ nehmen; $h$ mit Vorzeichen einsetzen).
+
+% ============================================================== Feder
+\T{Federkraft \ (ideale Feder)}
+
+$L$ = entspannte Länge, $x$ = aktuelle Position, $x-L$ = Auslenkung
+
+\FT{
+$F_{\mathrm{s}} = -k\,(x-L)$ & $F_{\mathrm{s}}$ in $\mathrm{N}$, $k$ in $\mathrm{N/m}$, $x,L$ in $\mathrm{m}$ \\
+$|F_{\mathrm{s}}| = k\,|x-L|$ & Betrag \\
+$|x-L| = \dfrac{|F_{\mathrm{s}}|}{k}$ & Auslenkung gesucht \\
+$\vec F_{\mathrm{s}} = -k\,(|\vec x|-L)\dfrac{\vec x}{|\vec x|}$ & vektorielle Form \\
+}
+
+\vspace{0.8mm}
+Vorzeichen: $x>L$ gedehnt $\Rightarrow F_{\mathrm{s}}<0$ (zieht zurück), $x<L$ gestaucht $\Rightarrow F_{\mathrm{s}}>0$ (drückt weg).
+An der Feder ist $a$ \textbf{nicht} konstant (Kraft hängt von $x$ ab) – nur $F=ma$ punktuell anwenden, keine Formeln für konstante Beschleunigung!
+
+% ============================================================== Gravitation
+\T{Gravitation \& Ladung}
+
+\FT{
+$|F_{\text{Grav}}| = \gamma\,\dfrac{m_1m_2}{r_{12}^2}$ & $F$ in $\mathrm{N}$, $m$ in $\mathrm{kg}$, $r$ in $\mathrm{m}$ \\
+$|F_{\text{Coul}}| = k_e\,\dfrac{|q_1q_2|}{r_{12}^2}$ & $k_e=\dfrac{1}{4\pi\varepsilon_0}$, $q$ in $\mathrm{C}$ \\
+$g = \gamma\,\dfrac{m_{\text{Erde}}}{r_{\text{Erde}}^2} = 9{,}81\ \mathrm{m/s^2}$ & Gewichtskraft $|F_g|=mg$ \\
+}
+
+\vspace{0.8mm}
+Beide ziehen/an: doppelter Abstand $\Rightarrow$ \textbf{$\tfrac14$} der Kraft.
+Gravitation zieht immer an; Ladungen: \textbf{gleiche Vorzeichen stossen ab, ungleiche ziehen an}.
+Kraftbeträge: Betragsstriche, weil $q_1q_2$ negativ sein kann.
+
+\vspace{0.8mm}
+\hk{Ladung:} \ $Q = N\,q_e = -N\,e$ \qquad $N = \dfrac{|Q|}{e}$ \qquad $e = 1{,}602\cdot10^{-19}\ \mathrm{C}$
+
+\hk{Ladungserhaltung:} \ $\Delta Q_{\text{gesamt}} = 0$ (z.\,B.\ $\Delta Q_A = -N q_e = +Ne$, $\Delta Q_B = -Ne$).
+$\Rightarrow$ nach dem Reiben sind die Ladungen gleich gross, entgegengesetzt.
+$1\ \mathrm{C}$ Ladung $\mathrel{\hat=} 6{,}24\cdot10^{18}$ Elektronen.
+
+% ============================================================== Energie
+\T{Energie \& Arbeit}
+
+\FT{
+$W = F\,s$ & Kraft \textbf{in Wegrichtung}, $W$ in $\mathrm{J}=\mathrm{N\,m}$ \\
+$E_{\text{kin}} = \dfrac{mv^2}{2}$ & $E$ in $\mathrm{J}$, $m$ in $\mathrm{kg}$, $v$ in $\mathrm{m/s}$ \\
+$E_{\text{pot}} = mgh$ & $h$ in $\mathrm{m}$; $\Delta E_{\text{pot}} = mg\,(h_2-h_1)$ \\
+$E_{\text{Feder}} = k\,\dfrac{(x-L)^2}{2}$ & $k$ in $\mathrm{N/m}$, $x-L$ in $\mathrm{m}$ \\
+$E_{\text{pot,el}} = qU$ & $q$ in $\mathrm{C}$, $U$ in $\mathrm{V}$, $E$ in $\mathrm{J}$ \\
+$U = \dfrac{E_{\text{pot,el}}}{q}$ & Spannung $=$ Energie pro Ladung \\
+$E_{\text{therm}} = |F_{\text{Reib}}|\,s$ & Reibung: Energie wird Wärme \\
+}
+
+\vspace{0.8mm}
+\hk{Energieerhaltung:} \ $E_{\text{Anfang}} = E_{\text{Ende}}$ \quad bzw.\ \ $E_{\text{pot}}+E_{\text{kin}} = $ konst.
+
+\FT{
+$mgh = \dfrac{mv^2}{2}$ & $\Rightarrow v=\sqrt{2gh}$ \ (freier Fall) \\
+$qU = \dfrac{mv^2}{2}$ & $\Rightarrow v=\sqrt{\dfrac{2qU}{m}}$ \ (Elektron, $q=e$) \\
+$k\,\dfrac{(x-L)^2}{2} = \dfrac{mv^2}{2}$ & $\Rightarrow v = \sqrt{\dfrac{k}{m}}\,|x-L|$ \\
+}
+
+\vspace{0.8mm}
+\hk{Systemgrenze} setzen! Mit Reibung: \ $E_{\text{pot}} = E_{\text{kin}} + E_{\text{therm}}$.
+Beim Wurf oben steckt \textbf{nur} die vertikale Energie in $E_{\text{pot}}$:
+$h_{\text{max}} = \dfrac{v_0^2-v_{x,0}^2}{2g} = \dfrac{v_{z,0}^2}{2g}$ (die horizontale $E_{\text{kin}}$ bleibt).
+
+\FT{
+$eU = \dfrac{m_ev^2}{2}$ & Elektron durch Spannung $U$ beschleunigt \\
+}
+
+% ============================================================== Diagramme
+\columnbreak
+\T{Diagramme lesen}
+
+\FT{
+\hk{$s$-$t$-Diagramm} & Steigung $= v$ (Gerade: $v$ konstant; Parabel: $a\neq0$) \\
+\hk{$v$-$t$-Diagramm} & Steigung $= a$ \quad \textbf{Fläche} zwischen Kurve und $t$-Achse $=\Delta s$ \\
+$a$-$t$-Diagramm & Fläche $=\Delta v$ \\
+}
+
+\vspace{0.6mm}
+Über der $t$-Achse: positiver Weg; darunter: negativer. Beim Bremsen fällt die $v$-Kurve linear auf $0$, die Dreiecksfläche ist der Bremsweg.
+
+% ============================================================== km/h
+\T{Schnelle Umrechnungen}
+
+\RT{@{}l@{\ }l@{\hspace{3mm}}l@{\ }l@{\hspace{3mm}}l@{\ }l@{}}{
+$36\ \mathrm{km/h}$ & $=10\ \mathrm{m/s}$ & $72\ \mathrm{km/h}$ & $=20\ \mathrm{m/s}$ & $108\ \mathrm{km/h}$ & $=30\ \mathrm{m/s}$ \\
+$50\ \mathrm{km/h}$ & $\approx13{,}9\ \mathrm{m/s}$ & $90\ \mathrm{km/h}$ & $=25\ \mathrm{m/s}$ & $120\ \mathrm{km/h}$ & $\approx33{,}3\ \mathrm{m/s}$ \\
+}
+
+\vspace{0.6mm}
+Merken: $1\ \mathrm{m/s} = 3{,}6\ \mathrm{km/h}$ – also «$\mathrm{km/h}$ durch $3{,}6$» oder «$\mathrm{m/s}$ mal $3{,}6$».
+
+% ============================================================== Vorgehen
+\T{Vorgehen bei einer Aufgabe}
+
+\begin{enumerate}\itemsep0.3mm \parsep0pt \topsep0pt \leftmargin5mm
+\item \textbf{Gegeben / gesucht} mit Symbolen aufschreiben.
+\item Alle Werte in \textbf{SI ohne Vorsilben}: $\mathrm{km/h}\to\mathrm{m/s}$ ($\div3{,}6$), $\mathrm{cm}\to\mathrm{m}$, $\mathrm{g}\to\mathrm{kg}$, $\mathrm{kN}\to\mathrm{N}$, $Q$ in $\mathrm{C}$.
+\item \textbf{Achse festlegen}, «oben positiv» notieren – dann haben $v$, $a$, $F$ klare Vorzeichen.
+\item \textbf{Kräfte sammeln}: $F_{\text{res}} = \sum F$ (Gewichtskraft nie vergessen!), dann $a=F_{\text{res}}/m$.
+\item Erst wenn $a$ \textbf{konstant} ist: Formeln für gleichmässig beschleunigte Bewegung. Sonst $F=ma$ punktuell (Feder!) oder Energieerhaltung.
+\item \textbf{Energieweg} prüfen, wenn nach Geschwindigkeit/Höhe gefragt ist und Kräfte schwer fassbar sind: $E_{\text{Anfang}}=E_{\text{Ende}}$.
+\item Einheit am Schluss \textbf{ablesen}, nicht raten: $\mathrm{N/kg}=\mathrm{m/s^2}$, $\mathrm{N\,m}=\mathrm{J}$.
+\end{enumerate}
+
+% ============================================================== Fallen
+\T{Typische Fallen}
+
+\begin{itemize}\itemsep0.3mm \parsep0pt \topsep0pt \leftmargin4.5mm
+\item Mit $\mathrm{km/h}$, $\mathrm{g}$ oder $\mathrm{cm}$ in eine Formel gehen (Faktor $1000$/$100$ falsch).
+\item $\cdot\,3{,}6$ statt $\div\,3{,}6$: von $\mathrm{km/h}$ nach $\mathrm{m/s}$ wird die Zahl \textbf{kleiner} ($72\,\mathrm{km/h}=20\,\mathrm{m/s}$).
+\item Masse und Gewichtskraft verwechseln: $70\,\mathrm{kg}$ ist $m$, nicht $F$.
+\item Gewichtskraft nur beim Fallen berücksichtigen – sie wirkt \textbf{immer}, auch in Ruhe.
+\item $t$ statt $\Delta t = t-t_0$; das $\Delta$ darf man nicht wegkürzen.
+\item Einzelkraft statt $F_{\text{res}}$ in $F=ma$ einsetzen.
+\item Am höchsten Punkt die \emph{ganze} Geschwindigkeit $=0$ setzen (nur $v_z=0$).
+\item Sinus und Kosinus vertauschen: $\varphi$ gegenüber der Horizontalen $\Rightarrow$ $\cos\varphi$ gehört zur horizontalen Komponente.
+\item $a<0$ heisst nicht automatisch «langsamer»: entscheidend ist, ob $v$ und $a$ dasselbe Vorzeichen haben.
+\item Exponenten beim Dividieren addieren statt subtrahieren.
+\end{itemize}
+
+\end{multicols}
+
+\end{document}
