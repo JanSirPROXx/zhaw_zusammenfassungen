@@ -1,0 +1,778 @@
+Zurich Universities of
+Applied Sciences and Arts
+Grundlagen der Elektro- und Digitaltechnik:
+Grundbegriffe: Kraft, Ladung, Energie
+Dr. M. Weyland
+Vorgetragen von K. Pernstich
+Vorlesung 1
+GED HS 2026
+MS Teams: m58fa93
+
+-- 1 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Über mich
+LOAD "*",8,1
+
+-- 2 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Über mich
+ASP.NET, C#, Java, Python, Matlab, R, …
+
+-- 3 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Über mich
+https://mentormate.zhaw.ch
+Beachten Sie auch meine
+PA/BA Ausschreibungen.
+
+-- 4 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Über mich
+Kurt Pernstich
+Dozent am Institute of Computational Physics
+Kurt.Pernstich@zhaw.ch
+MS Teams / 058 934 7488
+Büro: TN O2.44
+Sie dürfen mich gerne jederzeit mit Fragen kontaktieren!
+Wir bauen Messgeräte und
+Simulationssoftware für die Erforschung
+von Organischen Leuchtdioden (OLEDs)
+und Quantum-Dot Schichten in Industrie
+und der Grundlagenforschung.
+
+-- 5 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Grundlagen der Elektro- und Digitaltechnik:
+Modulvereinbarung und Administratives
+Dr. M. Weyland
+GED HS 2026
+
+-- 6 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Kursorganisation
+• Jede Woche findet eine Vorlesung mit zwei Lektionen statt (insgesamt 90 Minuten).
+• Alle zwei Wochen machen wir in Moodle einen Kurztest zu Beginn der Lektion (15 Minuten).
+• Die Termine dieser Tests sind im Moodle ersichtlich. Falls Sie in der ersten Semesterwoche
+Unterricht haben (d.h. falls Sie nicht am Montag Nachmittag in Zürich Unterricht haben), findet der
+erste Kurztest bereits in der zweiten Woche statt!
+• Alle zwei Wochen gibt es zwei Übungslektionen (insgesamt 90 Minuten).
+• Diese Übungen sind dazu da, dass Sie den Stoff aus der Vorlesung festigen.
+• In allen übrigen Semesterwochen gibt es ein Labor (ebenfalls 90 Minuten – gleicher Zeitslot)
+• Im Labor wollen wir einen praktischen Bezug zum Stoff aus der Vorlesung herstellen. Sie bauen
+dort Schaltungen auf, die wir Ihnen in der Vorlesung theoretisch zeigen, und sie arbeiten mit den
+gängigen Messgeräten aus dem Elektroniklabor.
+Kontakt Modulverantwortliche Person: Dr. M. Weyland
+Büro TP 417/2, weyl@zhaw.ch
+Emergencies: 079 653 23 47 7
+
+-- 7 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Leistungsnachweis
+• Semesterendprüfung: 70%
+• Kurztests: 15%
+• Labor: 15% (pass/fail für jede der 7 Durchführungen)
+• Wir führen insgesamt 7 Kurztests durch und werten alle.
+• Wir führen insgesamt 7 Labors durch, 7 Mal bestanden entspricht der Note 6.
+• Die Leistungsnachweise sind Präsenzveranstaltungen.
+• Falls aufgrund von Feiertagen weniger Leistungsnachweise stattfinden, erfolgt die
+Bewertung auf Grundlage dieser durchgeführten Leistungsnachweise.
+8
+Achtung
+Kurztests und Labor sind kein Bonus, sondern zählen 30% zur Note. Diese Punkte fehlen Ihnen, wenn Sie die
+Kurztests bzw. das Labor nicht bestreiten.
+Die Inhalte der Vorlesungen, Übungen und Labors sind Prüfungsrelevant und deshalb Gegenstand von Kurztests und
+von der Semesterendprüfung.
+
+-- 8 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Modalitäten Semesterendprüfung
+• Dauer: 90 Minunten
+• 10 Kurzaufgaben (multiple choice, je 1 Punkt).
+• Drei Aufgaben mit ausführlicher Bearbeitung (je 5 Punkte).
+• Von den drei Aufgaben mit ausführlicher Bearbeitung müssen Sie nur zwei Aufgaben
+bearbeiten!
+• Erlaubte Hilfsmittel:
+– Taschenrechner, auch mit Computer Algebra System (CAS)
+– Selbst verfasste, gedruckte oder handgeschriebene Zusammenfassung auf Papier mit bis zu 14
+zweiseitig beschriebenen Blättern.
+– GED-Formelsammlung (verfügbar hier: https://github.zhaw.ch/weyl/GED_cheatsheet/releases)
+– Gedruckte Bücher mit ISBN-Nummer.
+• Nicht erlaubt: Alle übrigen Hilfsmittel, insbesondere: Elektronische Geräte (Computer,
+Tablet, Smart Glasses, Smart Watches, Kopfhörer usw.); Verwendung des Internets;
+Musterlösungen zu Kurztests, Aufgaben, Probeprüfungen oder alten Prüfungen;
+Kommunikation mit anderen Studierenden oder Sprachmodellen, Mobilfunktelefon (auch
+nicht als Taschenrechner).
+9
+
+-- 9 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Unterrichtsmaterialien
+Wir legen alle Materialien auf Moodle ab. Sie finden dort:
+• Folien: Die Folien, die im Unterricht gezeigt werden. Folien, die mit gekennzeichnet sind,
+gehören nicht zum Prüfungsstoff.
+• Zusammenfassungen: Es handelt sich hierbei um ein Skript, in welchem der Stoff aus den
+Vorlesungen enthalten ist. Sie können es zur Prüfungsvorbereitung und Vorlesungsnachbereitung
+nutzen, sowie beim Lösen der Übungen und zur Aufarbeitung verpasster Vorlesungen.
+• Übungen und Musterlösungen: Aufgaben für Übungsstunde und Prüfungsvorbereitung
+• Diverse Mates (KI-Lernbegleiter)
+• Praktikumsunterlagen (Folien und Journal)
+• Links zu Videos, Simulationen, Webseiten und weiteren Ressourcen
+• Etwa Mitte Semester: Freiwillige Probeprüfung ohne Einfluss auf die Modulnote.
+→ Zählt nicht, aber zeigt Ihnen auf, wie die SEP etwa ablaufen wird.
+10
+Zur Information
+
+-- 10 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Übungen
+• Sie müssen keine Übungen abgeben.
+• Sie erhalten zu jeder Übungsserie auch eine Musterlösung.
+• Sie können gerne in Gruppen arbeiten. Wir empfehlen das sogar.
+• Wir machen keine Korrekturen, stellen aber Musterlösungen zur Verfügung. Die
+Übungsbetreuer sind Ihre Coaches. Sie werden Ihnen nach bestem Wissen Ihre
+Fragen beantworten. Die Fragen stellen müssen Sie aber selber.
+• Wir präsentieren Ihnen Aufgaben und (manchmal) Zusatzaufgaben. Uns ist klar,
+dass Sie diese nicht alle zusammen lösen können:
+– Die Aufgaben sollten Sie zumindest verstanden haben. Lösen Sie einige der Aufgaben selber
+(und vollständig) und studieren Sie die Lösung der anderen. Der Inhalt der Aufgaben gehört
+zum Prüfungsstoff.
+– Zusatzaufgaben dienen lediglich zur weiteren Übung. Wir setzen nicht voraus, dass Sie diese
+gelöst haben.
+11
+
+-- 11 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Semesterplan (provisorisch, d.h. Änderungen vorbehalten)
+Woche Thema Event
+1 Einführung und Grundbegriffe Übung
+2 Veränderungsraten, Strom, Potential, Spannung, Leistung, Batterie Kurztest, Labor
+3 Schaltungen Übung
+4 Reaktive Bauteile, Filter Schwingkreise Kurztest, Labor
+5 Signale – Grundlagen und Betrachtung im Frequenzraum Übung
+6 Halbleiter und Digitaltechnik I Kurztest, Labor
+7 Halbleiter und Digitaltechnik II Übung
+8 Sensorik Kurztest, Labor
+9 Elektrische und magnetische Felder Übung
+10 Elektrodynamik I Kurztest, Labor
+11 Elektrodynamik II Übung
+12 Wellenphänomene Kurztest, Labor
+13 Wärmestrahlung Übung
+14 Wrap-up, Repetitorium und/oder Exkurs in Spezialthema Kurztest, Labor
+12
+Hinweis: Aufgrund von Feiertagen kann es zu Verschiebungen im Semesterplan und/oder zur Reduktion der
+Anzahl Kurztests und Labor-Veranstaltungen kommen!
+
+-- 12 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+GED
+13
+Diese Vorlesung lebt von Ihnen –
+gestalten Sie sie aktiv mit!
+Wenn Sie Verbesserungsvorschläge, Wünsche
+oder Ideen zur Gestaltung und Durchführung der
+Vorlesung haben, sprechen Sie mich gerne
+jederzeit darauf an. Ich freue mich auf den
+Austausch mit Ihnen!
+
+-- 13 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Buchempfehlung
+Für die Vorbereitung auf den Leistungsnachweis sind die
+Unterlagen im Moodle hinreichend. Falls Sie mehr über
+Physik erfahren möchten oder doch nicht auf ein Buch
+verzichten möchten, empfehlen wir Ihnen das folgende Buch,
+das in der ZHAW-Bibliothek als eBook verfügbar ist:
+Paul A. Tipler, Gene Mosca: "Physik: für Wissenschaftler und
+Ingenieure", Spektrum Akademischer Verlag, ISBN-13: 978-
+3827419453. Link zur online Ausgabe.
+Bitte beachten Sie dabei allerdings, dass dieses deutlich
+umfangreicher ist als den Stoff, der in dieser Veranstaltung
+behandelt wird.
+14
+
+-- 14 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Grundlagen der Elektro- und Digitaltechnik:
+Grundbegriffe: Kraft, Ladung, Energie
+Dr. M. Weyland
+Vorgetragen von K. Pernstich
+Vorlesung 1
+GED HS 2026
+
+-- 15 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Lernziele
+Nach dieser Vorlesung können Sie …
+• erläutern, weshalb physikalische Grundlagen ein wichtiger Bestandteil Ihres
+Informatikstudiums sind.
+• den Zusammenhang zwischen Kraft und Beschleunigung erklären und einfache
+Bewegungen (gleichförmig und gleichmässig beschleunigt) rechnerisch
+beschreiben.
+• Gravitations-, Feder- und Coulomb-Kräfte qualitativ und quantitativ bestimmen und
+den Begriff der elektrischen Ladung präzise verwenden.
+• den Energiebegriff in verschiedenen Kontexten anwenden und mit Hilfe des
+Energieerhaltungssatzes physikalische Prozesse analysieren.
+18
+
+-- 16 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Physik, IT, Information
+19
+Klimasimulation
+Membran in einer Zelle
+Glasfaser	Digitalsignal
+
+-- 17 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Physikalische Kräfte
+
+-- 18 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Kräfte
+• Kräfte sind Vektoren!
+• Einige von Ihnen können noch nicht mit Vektoren rechnen. Vektorkräfte kommen
+dann im 4. Semester. Wir tun so als ob Kräfte Zahlen sind und beschränken uns
+auf Bewegungen in einer Dimension.
+• Es gibt einen fundamentalen Zusammenhang zwischen Kräften und
+Beschleunigungen, das 2. Newton'sche Gesetz:
+21
+Eine Kraft verändert die Geschwindigkeit eines Objektes, d.h. das Objekt wird
+beschleunigt (oder gebremst).
+Ԧ𝐹 = 𝑚 Ԧ	𝑎 Ԧ	𝐹: Kraft in Newton [N]
+𝑚: Masse in kg
+Ԧ	𝑎: Beschleunigung in m
+s2
+𝐹 = 𝑚𝑎
+Richtig, aber mit
+Vektoren.
+Eigentlich falsch, da «skalar»,
+aber ok in einer Dimension.
+
+-- 19 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Einheit der Kraft
+• Wir wissen:
+• Die Masse 𝑚 hat die Einheit kg
+• Die Beschleunigung Ԧ	𝑎 bzw. 𝑎 hat die Einheit m/s2.
+• → Die Einheit der Kraft hat die Gestalt
+• Die eckigen Klammern bedeuten: Einheitenangabe mit SI – Einheiten. Das m in eckigen Klammern
+heisst nicht etwa Masse sondern Meter.
+• [N] ist die Einheit der Kraft und heisst Newton.
+22
+kg m
+s2 = N
+Sir Isaac Newton
+1642-1727
+Ԧ𝐹 = 𝑚 Ԧ	𝑎 𝐹 = 𝑚𝑎
+
+-- 20 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Klicker Frage
+23Bildquelle: NASA/JPL (public domain)
+Ein Bild, das Kaffee, Kaffeetasse, Henkelbecher, Tasse enthält.	
+KI-generierte Inhalte können fehlerhaft sein.
+mentormate.zhaw.ch/chat/aEseDNbKJk2RUHDrtm4gFQ
+
+-- 21 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Konstante Kraft bedeutet konstante Beschleunigung
+• In einer Dimension gilt bei konstanter Beschleunigung für allgemeine Startbedingungen (wir geben
+Ihnen hier einfach eine Formel, deren Herleitung diskutieren wir nicht) für die Geschwindigkeit 𝑣 𝑡 :
+• Daraus folgt für die Position 𝑠 𝑡 :
+(alternative Notation: 𝑟 𝑡 )
+• Spezialfall: Keine Beschleunigung 𝑎 = 0, Startzeit 𝑡0 = 0, Startposition 𝑠0 = 0
+→ konstante Geschwindigkeit, das System behält seine Anfangsgeschwindigkeit 𝑣0:
+24
+𝑠(𝑡) = 𝑠0 + 𝑣0(𝑡 − 𝑡0) + 𝑎
+2 (𝑡 − 𝑡0)2 𝑡0: Startzeit (meist 0 gewählt)
+𝑠0 = 𝑠(𝑡0): Position zum Zeitpunkt 𝑡0
+𝑣0 = 𝑣(𝑡0): Geschwindigkeit zum Zeitpunkt 𝑡0
+𝑠(𝑡) = 𝑣0𝑡
+𝑣(𝑡) = 𝑣0 + 𝑎(𝑡 − 𝑡0)
+𝑣(𝑡) = 𝑣0
+𝐵𝑒𝑠𝑐ℎ𝑙𝑒𝑢𝑛𝑖𝑔𝑢𝑛𝑔 = 𝐺𝑒𝑠𝑐ℎ𝑤𝑖𝑛𝑑𝑖𝑔𝑘𝑒𝑖𝑡𝑠ä𝑛𝑑𝑒𝑟𝑢𝑛𝑔
+𝑍𝑒𝑖𝑡
+𝑎 = Δ𝑣
+Δ𝑡 ⇒ Δ𝑣 = 𝑎 Δt
+
+-- 22 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Konstante Beschleunigung, Anfangswerte 0
+𝒕 𝒔 𝒗 𝒂
+𝒕 - 𝑠 = 𝑣2
+2𝑎 v = 2𝑎𝑠 𝑎 = 𝑣2
+2𝑠
+𝒔 𝑡 = 𝑣
+𝑎 - v = 𝑎𝑡 𝑎 = 𝑣
+𝑡
+𝒗 t = 2𝑠
+𝑎 𝑠 = 𝑎𝑡2
+2 - 𝑎 = 2𝑠
+𝑡2
+𝒂 𝑡 = 2𝑠
+𝑣 𝑠 = 𝑣𝑡
+2 𝑣 = 2𝑠
+𝑡 -
+25
+Diese Beziehungen gelten nur und ausschliesslich für eine eindimensionale Bewegung
+mit 𝒂 = 𝒌𝒐𝒏𝒔𝒕. und 𝒗 𝟎 = 𝒔 𝟎 = 𝒕𝟎 = 𝟎!
+Diese Formeln gestatten es Ihnen, Bewegungen, welche aus einer Ruhelage beginnen,
+rechnerisch zu erfassen.
+
+-- 23 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+«Schwerkraft»
+• Wenn Sie nahe dem Erdboden (< 20 km über Meeresspiegel) einen Körper loslassen, erfährt dieser
+unabhängig von seiner Masse eine Beschleunigung von:
+• Beachten Sie: Wir arbeiten nun mit einer vektoriellen Beschleunigung
+• Die z-Achse bezeichnet die Vertikale. Die Konstante 𝑔 ist gleich 9.81 m/s2.
+• Wir vernachlässigen hier alle Reibungseffekte (Luftwiderstand!)
+• Die Beschleunigung in 𝑥- und in 𝑦-Richtung ist 0!
+26
+Ԧ	𝑎 =
+0
+0
+−𝑔
+
+-- 24 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Der Wurf: Position (Weg) und Geschwindigkeit
+• Da die Beschleunigung in 𝑥- und in 𝑦-Richtung 0 ist, sind
+die Geschwindigkeiten in diese Richtungen konstant. Da
+sie sich nicht verändern, entsprechen sie den
+Anfangsgeschwindigkeiten (𝑣𝑥,0, 𝑣𝑦,0).
+• Da die Beschleunigung in 𝑧-Richtung konstant ist, stehen
+Zeit und die Geschwindigkeit in diese Richtung in einem
+linearen Zusammenhang.
+• Da die Beschleunigung in 𝑥- und in 𝑦-Richtung 0 ist,
+nimmt der Weg in diese Richtungen linear mit der Zeit zu.
+• Da die Beschleunigung in 𝑧-Richtung konstant ist, stehen
+Zeit und Weg in diese Richtung in einem quadratischen
+Zusammenhang.
+27
+Ԧ	𝑣(𝑡) =
+𝑣𝑥,0
+𝑣𝑦,0
+𝑣𝑧,0 + (−𝑔)𝑡
+Abmachung: Falls nicht ausdrücklich anders gesagt, beginnen unsere
+Rechnungen immer bei einer Anfangszeit t0 = 0!
+Ԧ	𝑠(𝑡) =
+𝑠𝑥,0 + 𝑣𝑥,0 ⋅ 𝑡
+𝑠𝑦,0 + 𝑣𝑦,0 ⋅ 𝑡
+𝑠𝑧,0 + 𝑣𝑧,0 ⋅ 𝑡 − 𝑔 𝑡2
+2
+𝑠(𝑡) = 𝑠0 + 𝑣0(𝑡 − 𝑡0) + 𝑎
+2 (𝑡 − 𝑡0)2
+𝑣(𝑡) = 𝑣0 + 𝑎(𝑡 − 𝑡0)
+
+-- 25 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Der Wurf: Einige Folgerungen
+28
+Ԧ	𝑣(𝑡) =
+𝑣𝑥,0
+𝑣𝑦,0
+𝑣𝑧,0 − 𝑔𝑡
+Ԧ	𝑠(𝑡) =
+𝑠𝑥,0 + 𝑣𝑥,0 ⋅ 𝑡
+𝑠𝑦,0 + 𝑣𝑦,0 ⋅ 𝑡
+𝑠𝑧,0 + 𝑣𝑧,0 ⋅ 𝑡 − 𝑔 𝑡2
+2
+• Die Bewegung in vertikaler Richtung ist hängt nicht von der Bewegung in horizontaler Richtung
+ab.
+• Die Anfangsgeschwindigkeiten in 𝑥- und 𝑦-Richtung haben keinen Einfluss auf die Bewegung
+in z-Richtung und umgekehrt.
+
+-- 26 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Federkräfte
+Für eine idelae Feder gilt:
+29
+|𝐹s| = 𝑘(𝑥 − 𝐿)
+𝐹𝑠: Federkraft [N]
+𝑘: Federkonstante [N/m=kg/s2]
+𝐿: Ruhelänge der Feder [m]
+𝑥 : Länge der Feder [m]
+• Die Grösse «𝒙 − 𝑳» wird
+«Auslenkung» der Feder genannt.
+• Die Federkraft ist proportional zur
+Auslenkung aus der Ruhelage.
+• Die Federkraft ist der Auslenkung
+entgegengerichtet (𝑭𝒔 zeigt
+entgegen 𝜟𝒍 = 𝒙 − 𝑳).
+Die Federkraft ist von der Auslenkung
+abhängig. → Die Beschleunigung ist
+NICHT konstant.
+Ԧ	𝐹s = −𝑘( Ԧ	𝑥 − 𝐿) Ԧ	𝑥
+Ԧ	𝑥
+vektoriell skalar
+
+-- 27 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Gravitationskräfte zwischen zwei Massen
+30
+Ԧ	𝐹12 = −𝛾 𝑚1𝑚2
+Ԧ	𝑟12 2 𝑛12
+Ԧ	𝐹12: Kraft auf Masse 𝑚1, verursacht durch Masse 𝑚2
+𝑛12 = Ԧ𝑟12
+Ԧ𝑟12
+: Einheitsvektor von Masse 𝑚2 zu Masse 𝑚1
+𝛾 = 6.67 ⋅ 10−11 Nm2
+kg2 : Gravitationskonstante
+|𝐹12| = 𝛾 𝑚1𝑚2
+𝑟12
+2
+Zwischen Massen wirken Kräfte: Zwei Massen ziehen sich an. Die Gravitationskraft ist proportional zu
+den beiden Massen, die sich anziehen. Sie umgekehrt proportional zum Quadrat des Abstandes
+zwischen den Massen.
+Auch hier ist die Kraft nicht konstant.
+Wenn Sie eine Simulation machen
+wollen, brauchen Sie auf jeden Fall
+Vektoren.
+vektoriell skalar
+Ԧ	𝑟12 = Ԧ	𝑟1 − Ԧ	𝑟2, 𝑟12 = Ԧ	𝑟1 − Ԧ	𝑟2
+
+-- 28 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Elektrische Ladung
+• Die Grundursache elektrischer Phänomene ist die Existenz elektrischer Ladungen.
+• Es gibt zwei Arten von Ladungen: Positive und negative Ladung.
+• Zwischen Ladungen wirken Kräfte: Gleiche Ladungen stossen sich ab, ungleiche ziehen sich an.
+• In allen physikalischen Prozessen bleibt die Ladung exakt erhalten.
+• Warum zwei und nicht sieben Ladungen? Heute haben wir Erklärungen für die Dualität der
+Ladungen, ebenso für deren Erhaltung; diese Erklärungen stützen sich auf tiefliegende
+mathematische Einsichten.
+• Einheit der Ladung: Coulomb [C]. Ein Elektron trägt eine Ladung von -𝑒, wobei 𝑒 die
+Elementarladung 𝑒 = 1.602189 ⋅ 10−19 C beträgt.
+31
+
+-- 29 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Coulombkraft zwischen zwei Ladungen
+32
+Zwischen Ladungen wirken Kräfte: Zwei
+ungleiche Ladungen ziehen sich an, gleiche
+Ladungen stossen sich ab. Die Coulombkraft
+ist ansonsten strukturell sehr ähnlich zur
+Gravitationskraft.
+Ԧ	𝐹12 = − 1
+4𝜋𝜀0
+𝑞1𝑞2
+Ԧ	𝑟12 2 𝑛12 |𝐹12| = 1
+4𝜋𝜀0
+|𝑞1𝑞2|
+𝑟12
+2
+vektoriell skalar
+Ԧ	𝐹12: Kraft auf Ladung 𝑞1, verursacht durch Ladung 𝑞2
+𝑛12 = Ԧ𝑟12
+Ԧ𝑟12
+: Einheitsvektor von Ladung 𝑞2 zu Ladung 𝑞1
+𝜀0 = 8.859 ⋅ 10−12 C2
+Jm: «Elektrische Feldkonstante»
+Ԧ	𝑟12 = Ԧ	𝑟1 − Ԧ	𝑟2, 𝑟12 = Ԧ	𝑟1 − Ԧ	𝑟2
+
+-- 30 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Energie
+
+-- 31 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Metapher: Wert und Währung ➔ Energie
+Ist der Wert eines Gegenstandes gleich der Anzahl Schweizer Franken, die man für ihn bezahlen
+muss?
+Eigentlich nicht. In einer idealen Welt können Sie einen Goldbarren in Dollars tauschen, diese in Yen,
+diese dann wieder in SFr. und am Schluss wieder einen Goldbarren kaufen.
+34
+
+-- 32 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Energieformen im Überblick
+Name Formel Bemerkungen
+Potenzielle Energie
+einer Masse im
+Schwerefeld der Erde
+𝐸pot = 𝑚𝑔ℎ
+𝑚: Masse [kg]
+𝑔: 9.81 ms-2
+ℎ: Höhe [m]
+Kinetische Energie 𝐸kin = 𝑚𝑣2
+2
+𝑚: Masse [kg]
+𝑣: Geschwindigkeit [ms-1]
+Federenergie 𝐸spring = 𝑘 (𝑥 − 𝐿)2
+2
+𝑘: Federkonstante [kg/s2]
+𝐿: Ruhelänge der Feder [m]
+𝑥 : Länge der Feder [m]
+Potenzielle Energie
+einer Ladung bei
+einer Spannung.
+𝐸pot.el = 𝑈𝑞 𝑞: Ladung [C]
+𝑈: Spannung [V]
+Wärme 𝐸therm
+35
+
+-- 33 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Zusammenhang Kraft und Energie: mechanische Arbeit
+• Arbeit ist mechanisch übertragene Energie.
+• Wird beispielsweise ein Körper beschleunigt oder angehoben, wird dabei Arbeit verrichtet (von der
+Kraft).
+• Die übertragene Energie zeigt sich als Änderung der Bewegungsenergie oder der Lageenergie.
+• Arbeit bezeichnet also keine gespeicherte Energieform, sondern die Energiemenge, die bei einem
+mechanischen Vorgang übertragen wird.
+36
+
+-- 34 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Mechanische Arbeit
+«Herleitung» der Formel zur Berechnung der mech. Arbeit:
+• Eine Kraft 𝐹 hebt einen Körper der Masse 𝑚 und die Höhe ℎ an
+– Der Körper speichert eine potenzielle Energie von 𝐸𝑝𝑜𝑡 = 𝑚 𝑔 ℎ
+– Diese Energie stammt von der Kraft. Die übertragene Energie (Arbeit) wird:
+𝐸𝐹 = 𝐸𝑝𝑜𝑡 = ต	𝑚 𝑔
+𝐹𝑔
+ℎ = 𝐹𝑔 ℎ
+Allgemein gilt:
+Die Einheit der Energie ist Joule [J]:
+Kraft ⋅ Weg = 𝑁 𝑚 = kg m2
+𝑠2 = [𝐽]
+37
+Arbeit (mech. übertragene Energie) = Kraft mal Weg wenn Ԧ	𝐹 ∥ Ԧ	𝑠
+
+-- 35 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Beispiel
+• Sie ziehen einen Block auf einer Ebene 5 m weit. Sie müssen dabei gegen eine
+Reibungskraft F = 20 N ankämpfen. Wenn Sie aufhören zu ziehen, steht der Block
+still → Sie ziehen gerade so stark, dass Sie die Reibungskraft überwinden können.
+• Wieviel Arbeit ΔEmech leisten Sie?
+38
+Δ𝐸mech = 20 𝑁 ⋅ 5 𝑚 = 100 𝐽
+
+-- 36 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Energie im Schwerefeld
+39
+Achtung:
+Die potenzielle Energie ist (so, wie wir sie
+gebrauchen) eine Energiedifferenz. Es gibt eine
+willkürliche Festlegung einer Höhe h = 0.
+Ganz korrekt müsste man sagen: Um eine Masse m
+von einer Höhe h1 auf eine Höhe h2 zu bringen,
+braucht man die Energie
+𝐸pot = 𝑚𝑔ℎ
+𝐸pot = 𝑚𝑔(ℎ2 − ℎ1)
+
+-- 37 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Kinetische Energie
+• Man braucht Kraft, um ein «Objekt schnell zu machen».
+• Die Energie, die man durch Ziehen in das Objekt hineinbringt, ist dann im
+Objekt drin.
+• Ein Objekt mit Masse 𝑚 und Geschwindigkeit 𝑣 beinhaltet die kinetische
+Energie
+40
+𝐸kin = 𝑚𝑣2
+2
+
+-- 38 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Federenergie
+Die Energieberechnung geht wie folgt:
+41
+𝐿: Ruhelänge der Feder
+𝑥: Länge der Feder (ausgelenkt)
+𝑘: Federkonstante [N/m]
+𝐸spring = 𝑘 (𝑥 − 𝐿)2
+2
+
+-- 39 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Spannung
+• Sie haben vielleicht schon mal gehört, dass Ladungen von A nach B fliessen, wenn
+zwischen A und B eine Spannung U (Einheit: Volt [V]) herrscht. (Wir werden Strom und
+Spannung in der nächsten Vorlesung ausführlich besprechen)
+• Sie können sich das so vorstellen: Genauso, wie Wasser eine Höhendifferenz
+hinunterfällt und dabei Energie abgibt (Speicherkraftwerk), «fallen» Ladungen eine
+Spannung hinunter.
+• Wenn Sie eine Ladung 𝑞 eine Spannung 𝑈 «hinunterfällt», nimmt die potenzielle
+Energie der Ladung ab, es wird die potenzielle Energie 𝐸𝑝𝑜𝑡,𝑒𝑙 abgegeben:
+– Diese Energie 𝐸pot.el kann z.B. einen Heizstab erwärmen oder einen Motor antreiben.
+42
+𝐸pot.el = 𝑞 𝑈 Spannung = Energie
+Ladung
+
+-- 40 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Energieerhaltung
+43
+§§§ GESETZ: Energieerhaltungssatz §§§
+Bei physikalischen Prozessen bleibt die Gesamtmenge
+Energie im betrachteten System und der Umgebung
+immer erhalten!
+Der Energieerhaltungssatz erlaubt es oft, physikalische Grössen zu Beginn
+und Ende physikalischer Prozesse miteinander zu vergleichen und
+quantitativ zu ermitteln.
+Die Erhaltung der Energie gilt nur für die Gesamtenergie. Wenn Sie ein
+System analysieren, kann es natürlich sein, dass Energie in oder aus dem
+System transportiert wird. Die Systemgrenze ist also wichtig.
+
+-- 41 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Beispiel Energieerhaltung
+Wir betrachten einen Blumentopf. Die Energie des Blumentopfs setzt
+sich zusammen aus potenzieller Energie und kinetischer Energie, die
+übrigen Energieformen seien konstant.
+• Sie lassen den Topf mit einer Anfangsgeschwindigkeit von null fallen. Der Topf fällt
+7 m. Mit welcher Geschwindigkeit prallt er auf den Boden?
+• Lösung über die Energiebilanz: Die Erde und der Blumentopf bilden ein
+abgeschlossenes System.
+→ Dessen Gesamtenergie ändert sich nicht.
+44
+𝐸pot + 𝐸kin = konstant
+𝑠 = 𝑣2
+2𝑎 ⇒ 𝑣 = 2𝑔ℎ
+𝐸𝐴𝑛𝑓𝑎𝑛𝑔 = 𝐸𝐸𝑛𝑑𝑒
+𝐸𝑝𝑜𝑡,𝐴 + Ekin,A = 𝐸𝑝𝑜𝑡,𝐸 + Ekin,E
+𝐸𝑝𝑜𝑡,𝐴 + 0 = 0 + 𝐸𝑘𝑖𝑛,𝐸
+𝑚 𝑔 ℎ = 𝑚 𝑣2
+2 ⇒ 𝑣 = 2 𝑔 ℎ
+
+-- 42 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Beispiel Energieerhaltung
+• Wir betrachten einen Blumentopf. Die Energie des Blumentopfs setzt sich zusammen aus potentieller
+Energie, kinetischer Energie und anderen Energieformen. Die "anderen Energieformen" seien
+konstant.
+• Sie lassen den Topf mit einer Anfangsgeschwindigkeit von null fallen. Der Topf fällt 7 m. Mit welcher
+Geschwindigkeit prallt er auf den Boden?
+45
+Position Topf 𝒛 𝑬𝐤𝐢𝐧 𝑬𝐩𝐨𝐭 𝑬𝐭𝐨𝐭𝐚𝐥
+«7 Meter»
+«Boden»
+
+-- 43 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Weiteres Beispiel Energieerhaltung
+Eine Feder hat die Ruhelänge 𝐿 = 0.3 m. Sie wird auf eine Länge 𝑥 = 0.4 m
+ausgedehnt. An der Feder hängt eine Masse 𝑚 = 0.1 kg. Die Feder hat eine
+Federkonstante 𝑘 = 100 N/m. Wenn man die Masse nun loslässt, wird sie
+beschleunigt, wobei wir annehmen, alle Prozesse verliefen reibungsfrei.
+• Bei welchem Punkt wird die Masse die maximale Geschwindigkeit haben?
+• Wie gross wird diese Geschwindigkeit sein?
+46
+Gedehnt:
+𝐸𝑝𝑜𝑡 = 𝑘 𝑥 − 𝐿 2
+2
+𝐸𝑘𝑖𝑛 = 0
+𝐸𝑔𝑒𝑠 = 𝐸𝑝𝑜𝑡 + 0
+Ungedehnt:
+𝐸𝑝𝑜𝑡 = 0
+𝐸𝑘𝑖𝑛 = 𝑚𝑎𝑥 = 𝑚 𝑣2
+2
+𝐸𝑔𝑒𝑠 = 0 + 𝐸𝑘𝑖𝑛
+⇒ 𝐸𝑝𝑜𝑡 = 𝐸𝑘𝑖𝑛
+𝑘 𝑥 − 𝐿 2
+2 = 𝑚 𝑣2
+2 ⇒ 𝑣 = ⋯
+
+-- 44 of 45 --
+
+Zurich Universities of
+Applied Sciences and Arts
+Lernzielkontrollfragen
+47
+[J. Hattie, http://visible-learning.org/de/hattie-rangliste-einflussgroessen-effekte-lernerfolg]
+Einflussgrössen für Lernerfolg
+Lernzielkontrollfragen GED Woche 01
+
+-- 45 of 45 --
+

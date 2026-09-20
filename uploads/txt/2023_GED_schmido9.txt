@@ -1,0 +1,629 @@
+Dominique Schmitz, IT22tb_WIN 	Martin Gassner 	Grundlagen der Elektrotechnik und Digitaltechnik 	1/12
+Kraft, Energie, Ladung und Spannung
+Kraft (Newton)
+Ein Newton ist die Größe der Kraft, die aufgebracht werden muss, um einen
+ruhenden Körper der Masse 1 kg innerhalb einer Sekunde gleichförmig auf
+die Geschwindigkeit 1 ms -1 zu beschleunigen.
+𝑚: Meter
+a = F / m [m * s -2 ], 	m = a / F 	s = Sekunden
+Bsp: 1 G = 70 kg ⟑ 9.81 ms -2 = 686.7 [N]
+Konstante Beschleunigung a mit Anfangswert v(t0) = 0
+s = Distanz [m], t = Zeit [s], v = Geschw. [m*s -1
+], a = Beschl. [m * s -2 ]
+Bsp: Distanz berechnen (Bremsweg oder Beschleunigungsweg)
+¨
+Einige physikalische Kräfte
+x – L: Auslenkung
+Arbeit / Energie (Joules)
+Arbeit [J] = Kraft [N] ⟑ Weg [m]
+Das Joule ist die Arbeit, die verrichtet wird, wenn die Kraft
+von 1 Newton über eine Strecke von 1 Meter ausgeübt wird.
+Arbeit ist nichts anderes als die Änderung der potentiellen Energie.
+= 𝐸mech
+m = Meter 	s = Sekunden
+Elektrische Ladung (Coulomb)
+C = As A = Geschwindigkeit
+Elementarladung 𝑒  = 1.602 177 ⟑ 10-19 C 	Ein Elektron hat -𝑒 
+Elektronenmasse: 9.109 ⟑ 10-31 kg
+Protonenmasse: 1.6727 ⟑ 10-27 kg
+Ladung ≈ Masse
+Ladungen «fallen» eine Spannung hinunter,
+genauso fallen Massen eine Höhendifferenz herunter.
+Energieerhaltungssatz
+Energie kann in verschiedene Formen umgewandelt werden
+(z.B. Potentielle Energie, kinetische Energie, etc.).
+Ein System mit Energie, übt auf ein anderes System Kräfte aus.
+Federenergie in maximale Beschleunigung umwandeln.
+1. Federenergie in kinetische Energie umwandlen.
+2. Gleichung nach 𝑣 umformen.
+Übersicht
+Newton = Kraft
+Beschleunigung. Etwas wird «einmalig» bescheunigt.
+Joules = Arbeit (Energie)
+Eine Kraft wirkt konstant über eine Distanz.
+= konstante Beschleunigung über eine Distanz.
+d.h. etws wird schneller und schneller.
+Konstante Kraft = konstante Beschleunigung
+J = N⟑m = C⟑V = W⟑s = (kg ⟑ m2
+) / s -1
+Watt = Leistung
+Die Rate, mit der Arbeit in einem Zeitinterval verrichtet wird.
+P = V⟑A
+Varia
+x km/h = x ⟑ 103 ⟑ 60 -2 m/s
+
+-- 1 of 12 --
+
+Dominique Schmitz, IT22tb_WIN 	Martin Gassner 	Grundlagen der Elektrotechnik und Digitaltechnik 	2/12
+Strom, Spannung und Leistung
+Ohm’sches Gesetz
+Das Ohmsche Gesetz gilt nicht für Halbleiter (Dioden).
+Eine mindest Spannung wird benötigt damit Strom fliesst.
+(ca. 2–3 V für Dioden)
+Strom I
+Anzahl positive Ladungen (q) pro Zeiteinheit dir durch ein Fläche hindurchgeht.
+Einheit: Ampere A = Cs -1 (Fluss eines Coulombs pro Sekunde)
+Die Fliessrichtung des Stroms ist entgegengesetzt der Referenzrichtung.
+Spannung U
+Einheit: Volt V (Potenzialdifferenz)
+Spannung ist immer eine Funktion zweier Referenzpunkte:
+Potential 𝞅 (phi)
+Potentielle Energie eines Energieträgers:
+Leistung P
+Energie (J) pro Zeit (s) (Energieänderung pro Zeitintervall, Energiestrom)
+Einheit: Watt W = Js -1
+, J = Ws
+Wh beschreibt Energie (Joules) und nicht Leistung.
+Ein Widerstand «verheizt» eine Leistung. Die abgegebene Leistung wird in
+Wärme verwandelt:
+Wirkungsgrad 𝜂 (eta)
+Beschreibt die Energieeffizienz. Differenz wird in Wärme umgewandelt.
+Man möchte einen möglichst hohen Wirkungsgrad.
+Bsp: Ein Laptop-Akku kann 50 Wh (= 180kWs = 180 kJ) Energie speichern.
+Ladung erfolgt mit einer Leistung von 65 W bei einem Wirkungsgrad von 0.9.
+Der leere Akku ist vollständig geladen nach:
+180000 J = 65 Ws ⟑ 𝜂 → s = J / (W ⟑ 𝜂)
+s = 180000 / (65 ⟑ 0.9) = 3078 s = 51 Minuten
+Dem Akku wird eine Leistung von 65 W entzogen. Akku ist leer nach:
+180000 / 65 = 2769 s = 46 Minuten
+Bsp: Widerstand berechnen bei vorgegebener bzw. benötigter Leistung.
+Widerstand R
+Einheit: Ohm 𝝮  (Omega)
+Der Widerstand eines Materials hängt auch von der Temperatur ab.
+Widerstand R eines Drahtes
+– Je länger ein Kabel, eine Leitung, desto grösser der Widerstand
+– Je grösser der Kabelquerschnitt, desto kleiner der Widerstand.
+Formel nur für Gleichströme oder bis Netzfrequenz von 50 Hz:
+Temperaturabhängigkeit von Widerständen
+Der Widerstand hängt auch von der Temperatur ab.
+Kirchhoffsche Regeln
+Knotenregel (Ladungserhaltung)
+Die Summe der eingehenden Ströme muss gleich gross sein wie die Summe
+der wegfliessenden Ströme. An Verzweigungen (Knoten) können sich Ströme
+teilen. Jedes Teilstück trägt dann einen eigenen Strom.
+bzw.
+Maschenregel (Energieerhaltung)
+Weg durch Drähte, welche zu seinem Ausgangspunkt zurückführt.
+Über jedem Bauelement fällt eine Spannung ab. Drähte werden als ideale
+Leiter angeschaut (0 Ω). In ihnen findet kein Spannungsabfall statt.
+Batterie
+RIn = Batterie Innenwiderstand
+
+-- 2 of 12 --
+
+Dominique Schmitz, IT22tb_WIN 	Martin Gassner 	Grundlagen der Elektrotechnik und Digitaltechnik 	3/12
+Kapazität C
+C [F] für Capacitance (nicht Coulomb). Einheit: Farad F.
+Kondensator (Capacitor) = Energiespeicher
+Kapazität C [F] eines Kondensators gibt an, wie viel Ladung Q [Coulomb]
+ein Kondensator bei einer Spannung U [V] von einem Volt speichern kann.
+[Farad F]
+[Volt V]
+[Coulomb C]
+1 Farad bei 1 Volt kann 1 Ampere
+in einer Sekunde «entleeren».
+Je grösser die Kapazität C [F],
+desto stärker der Stromfluss I [A].
+A = Fläche der Elektroden
+d = Abstand der Elektroden
+𝜺𝟎 = Elektrische Feldkonstante (Dielektrikum im Vakuum)
+𝜺𝒓 = Relativer Dielektrizitätskonstante eines Materials (Dielektrikum)
+Isolationsfähigkeit: 𝜺𝟎 ⟑ 𝜺𝒓
+RC-Schaltung
+Zeitkonstante τ (tau)
+Der Ladestrom I fällt in der Zeit τ auf etwa 37% des Ursprungswertes ab.
+Die Kondensatorspannung UC steigt in der Zeit τ auf 63% der
+Quellenspannung an. 0.37 = e -1 = 1/e
+[s]	[F] 	[Ohm]
+R = Parasitärer Widerstand
+Spannung U über Kondensator zur Zeit t
+Strom I zur Zeit t
+Widerstand R
+[A] 	[V]
+Blindwiderstand X
+Nur bei Wechselspannung!
+Widerstand von Kondensatoren sind Frequenzabhängig.
+Je höher die Frequenz, desto geringer der Blindwiderstand.
+Je höher die Frequenz, desto stärker der Stromfluss.
+Ein Kondensator hat eine Art Widerstand, welcher mit zunehmender
+Kapazität C und Frequenz f abnimmt.
+[Ω]
+Hoch- und Tiefpassfilter (Wechselspannung)
+Hochpassfilter (CR) 	Tiefpassfilter (RC)
+Bei Grenzfrequenz fg (cut-off frequency) beträgt Ausgangsspannung 70.7%
+[s] 	[s]	[F] 	[Ω]
+Induktivität L
+Einheit: Henry H
+Spule (Inductor): Pendant zum Kondensator.
+Induktivität exisitert nur bei Änderung des Stroms.
+Je stärker der Strom, desto grösser das Magnetfeld.
+Zu jedem Strom gehört ein Magnetfeld.
+Ein Magnetfeld enthält Energie.
+RL-Schaltung
+Strom I nimmt zu, Spannung U über Spule nimmt ab.
+Ein und Ausschlatvorgang
+Zeitkonstante τ (tau)
+Der Ladestrom I steigt in der Zeit τ auf etwa 63% des Ursprungswertes ab.
+Die Spulenspannung U C fällt in der Zeit τ auf 37% der
+Quellenspannung ab. 0.37 = e -1 = 1/e
+Spannung UL über Spule
+[Sekunden]
+Zeitkonstante τ (tau)	Induktivität L einer Spule
+[H]
+Anfangs Strom
+(t [s] = 0)
+Maximaler Strom
+Zeitkonstante τ ablesen:
+8 [V] ⟑ 0.63 ≈ 5 [A] → τ = 2 [s]
+R = U 0 / I(∞) → 8 [V] / 8 [A] = 1 [Ω]
+L = R ⟑ τ → 1 [Ω] ⟑ 2 [s] = 2 [H]
+Bsp: Spannungsquelle U0 = 8 [V]
+I(t)
+[A] 	[V]
+𝜏 von Abszisse (x-Achse) ablesen
+
+-- 3 of 12 --
+
+Dominique Schmitz, IT22tb_WIN 	Martin Gassner 	Grundlagen der Elektrotechnik und Digitaltechnik 	4/12
+Schwingkreise
+Schaltkreise mit Kondensatoren und Spulen.
+LC ungedämpft
+Widerstand wird ignoriert.
+[Hz]
+Frequenz f 	Periode T
+[s]
+Kapazität C
+[F]
+Induktivität L
+[H]
+LRC gedämpft
+Widerstand wird berücksichtigt.
+Frequenz f
+[Hz] 	[H]
+Induktivität L 	Zeitkonstante τ
+[s]
+Bedingung für eine Schwingung
+[A] 	[V]
+Frequenz, Amplitude, Periode
+[s]
+Periode T
+[Hz]
+Frequenz f	Spannung (Amplitude) U zur Zeit t
+Bsp. Frequenz: T = 20 ms, f = 1 / 0.02 = 50 Hz
+Phasenverschiebung 𝜑 (phi)
+Sie kennen die Vorzüge der Digitaltechnik
+Rauschen und andere Störungen kann analoges Signal stark beeinflussen.
+Digitale Signale eine gewisse Resistenz gegen solche Einflüsse
+Bitrate
+Bitrate = Bits pro Sekunde (= Frequenz)
+Bsp: Es kann 1 Bit in 20 ns übertragen werden, was ist die Bitrate?
+T = 20 ns = 20 ⟑ 10 -9 → f = 1 / (20 ⟑ 10 -9
+) = 50 000 000 Bits/s = 50 MBits/s
+Fourierzerlegung
+Jede periodische Funktion kann als gewichtete Summe von Sinus- und
+Cosinusfunktionen dargestellt werden.
+Klassische Fourierzerlegung
+= Grundfrequenz
+= Vielfaches der Grundfrequenz
+a0 = Vertikaler Verschub 	an = Anteil cos für fn 	bn = Anteil cos für fn
+g(t)
+Fourierkoeffizienten
+Spektrum = Anzahl Koeffizienten (Frequenzkomponente,)
+Signal = gewichtete Summe von einzelnen Sinussignalen.
+Je höher die Grundfrequenz, desto mehr Bandbreite nimmt das Signal ein.
+Bandbreite = Übertragungsgeschwindigkeit von Daten
+
+-- 4 of 12 --
+
+Dominique Schmitz, IT22tb_WIN 	Martin Gassner 	Grundlagen der Elektrotechnik und Digitaltechnik 	5/12
+Halbleiter
+Dioden lassen Strom nur in einer Richtung durch.
+Sperrschicht (Depletion zone)
+p-dotierten Halbleiter: Freie positive Ladungsträger
+n-dotierten Halbleiter: Freie negative Ladungsträger
+Trotz freien Ladungsträger haben die Halbleiter eine neutrale Ladung.
+Transistoren
+Elektronische «Schalter»
+BJT (Bipolar Junction Transistor)
+Strom-kontrolliert.
+Verschwendet bei jedem Umschalten wegen parasitärer Kapazität
+(schaltet langsam). Nur für Tiefleistung Anwendungen.
+Base 	= Kontrolle
+Emittor 	= Load
+Collector = Ground
+P-channel
+Strom wenn inaktives Gate
+N-channel
+Strom wenn aktives Gate
+FET (Feldeffekttransistor)
+Spannung-kontrolliert.
+Schaltet schnell und verschwendet keine Energie wie BJTs.
+Für Hochleistung Anwendungen. Teurer als BJTs.
+Gate 	= Kontrolle
+Drain 	= Load
+Source = Ground
+P-channel
+Strom wenn inaktives Gate
+N-channel
+Strom wenn aktives Gate
+Spannung zwischen Gate und Source
+Stromfluss von Drain nach Source
+Open-Drain-Output vs. Push-Pull-Output
+= Outputs-Konfigurationen
+Open-Drain-Output
+Problem: Strom fliesst immer durch Schaltung, auch wenn Output Low ist.
+Push-Pull-Output
+Pull-Up-Resistor wird durch ein p-FET ersetzt.
+Kein Strom durch Schaltung wenn Output Low ist.
+Signale
+Effektivwert
+Mass für effektive Spannung ≈ 60% von Signal US
+[V]	[V] 	[A]
+Interferenzen (Superposition vn Wellen)
+Überlagernde Signale.
+Konstruktive Interferenz: Amplituden addieren sich.
+Destruktive Interferenz: Amplituden löschen sich gegenseitig aus.
+Logikgatter
+Bausteine
+1-Bit Halb Addierer 	1-Bit Voll Addierer
+4-Bit Addierer
+
+-- 5 of 12 --
+
+Dominique Schmitz, IT22tb_WIN 	Martin Gassner 	Grundlagen der Elektrotechnik und Digitaltechnik 	6/12
+Flipf-Flops
+Gedächtnisfunktion: Ermöglicht ein Bit zu speichern.
+SR-Flipflop
+Funktionsweise
+S verschiebt Q (nur wenn Q = 1) nach Q. Q bleibt für immer 1, auch wenn S
+wieder von 1 → 0 → 1 wechselt. S und R sind «Toggles».
+Unter keinen Umständen dürfen beide Eingänge gleichzeitig 1 sein.
+Q und Q sind Inverse.
+S0 → S1 → S0
+R0 	→ R1 → R0
+Q1 → Q0 	→ Q1
+Q0 → Q1 	→ Q0
+JK-Flip-Flop
+Jump = set, Kill = reset, ⊳ = clk (flankengesteuert)
+alterniert bei jedem clk (steigend)
+D-Flip-Flop
+⊳ = clk (flankengesteuert)
+Q übernimmt immder den Wert von D bei steigender Flanke.
+Für getaktete Systeme und Erzwingen gleicher Laufzeiten.
+Shiftregister (serieller Input, paralleler Output)
+NAND 	NOR
+NAND mit 3 Inputs
+Fluss Φ
+Spezialfälle
+Mechanische Arbeit (Kraft mal Weg)
+r = Zurückgelegter Weg
+(muss nicht parallel zu F sein.
+Bsp. Induktionsgesetz
+
+-- 6 of 12 --
+
+Dominique Schmitz, IT22tb_WIN 	Martin Gassner 	Grundlagen der Elektrotechnik und Digitaltechnik 	7/12
+Maxwellgleichungen (im Vakuum)
+Beschreiben, wie sich Licht
+als elektromagnetische
+Welle ausbreitet.
+∑ = Geschlossene Fläche
+Ω = Offene Fläche
+𝛾 = Kurve
+Gauss'sches Gesetz
+Stellt eine Beziehung zwischen elektrischen Feldern und Ladungen her.
+Der Fluss des elektrischen Feldes 𝐸 durch eine geschlossene Fläche Σ.
+𝜌/𝜺0 = Ladungsdichte innerhalb von von Σ.
+q/𝜺0 = Gesamtladung innerhalb Σ.
+𝜺0 = Elektrische Feldkonstante / Permittivität des Vakuums
+Desto kleiner der Radius umso grösser ist die
+Ladungsdichte (Ansammlung von Elektronen
+oder Protonen) und das E-Feld. Das Potential
+zwischen zwei Punkten auf der Oberfläche ist
+allerdings überall gleich und die Spannung = 0.
+Zweite Gleichung
+Besagt, dass der Fluss des magnetischen Feldes durch eine geschlossene
+Fläche ∑ immer gleich 0 ist. = Das B-Feld ist senkrecht zum E-Feld.
+Faraday'sches Gesetz
+Induktionsgesetz:
+1) Die zeitliche Änderung (des Flusses) eines Magnetfeldes
+durch eine Schlaufe induziert in dieser eine Spannung U.
+2) Eine rotierende Schlaufe (= zeitliche Änderung der Fläche)
+in einem Magnetfeld induziert in dieser eine Spannung U.
+Vierte Gleichung
+Magnetfeld läuft tangential um den Strom (Leiter).
+Bsp. Gauss'sches Gesetz
+Elektrische und Magnetische Felder
+Felder kann man sich als fliessendes Wasser mit einer Fliessgeschwindigkeit
+vorstellen .
+Elementarladung
+Ein Elektron trägt eine Ladung von - 	-
+Magnetisches Feld
+Einheit: Tesla [T] = kg/(s C) = N/(A m)
+Magnetische Felder werden durch Ströme (bewegte Ladungen)
+und durch zeitlich veränderliche elektrische Felder erzeugt.
+D.h. Magnete haben keinen Einfluss auf ruhende Ladungen.
+Vierte Gleichung
+N = Windungen
+L = Länge
+μr = Permeabilität des Metalls
+Induktionsgesetz
+𝜔 = Winkelgeschwindigkeit (Winkel pro Zeit)
+Transformatoren (mit Eisenkern)
+N = Windungen
+B-Feld um einen Leiter
+B-Feld um eine Spule
+
+-- 7 of 12 --
+
+Dominique Schmitz, IT22tb_WIN 	Martin Gassner 	Grundlagen der Elektrotechnik und Digitaltechnik 	8/12
+Elektrisches Feld
+Kraft pro Ladung.
+Newton pro Coulomb (N/C) oder Volt pro Meter (V/m) oder kg/(m s3 A)
+[N/C]
+[N/C]
+Elektrische Felder werden durch Ladungen und durch
+zeitlich veränderliche magnetische Felder erzeugt.
+Gauss'sches Gesetz
+Coulombkraft (Elektrostatische Kraft)
+= Kraft zwischen zwei Ladungen.
+q = Ladung [C]
+Gauss'sches Gesetz
+[N]
+[N] Skalarform
+[N] Vektorform
+[N]
+Lorenzkraft
+Kraft F die ein Magnetfeld B auf
+eine bewegte Ladung q ausübt.
+Linke Hand für (+)
+Rechte Hand für (–)
+—	v = Geschwindigkeit der Ladung q
+[N]
+Falls v senkrecht auf B steht (= Kreisbahn):
+m = Masse 	r = Radius
+B = |B| 	v = Gewschwindigkeit
+q = Ladung
+[N]
+Nennspannung 
+�
+Effektivspannung UEff
+Elektromagnetische Kraft (Feldkraft)
+= Gesamtkraft auf eine Ladung. Formel vereint Coulomb- und Lorentz-Kraft.
+[N]
+Energiedichte 𝑤
+Energie pro Volumen
+Energie ℰ in einem Volumen V
+Elektromagnetische Wellen
+Hertz’sche Dipolantenne
+In einem Stab werden oszillierende
+Ströme erzeugt. Diese oszillierenden
+Ströme erzeugen elektromagnetische
+Strahlung!
+Reziprozitätsprinzip:
+Empfang mit Dipol Antenne: Zeitliche Vari-
+ationen im elektrischen Feld des Senders
+erzeugen zeitliche Variationen im Empfänger.
+Die Ladungen werden durch das zeitlich
+verändernde E-Feld bewegt, es entsteht ein
+Strom und eine Spannung, die abgegriffen
+werden kann.
+Kräfte auf die Ladungen:
+Die Länge der Antenne sollte der Hälfte der Wellenlänge der Strahlung
+entsprechen.
+Richtung von Antennen:
+Eine Antenne strahlt nicht in alle Richtungen
+gleich stark. Intensität ist Proportional zur
+Länge des Pfeils.
+Maximal bei 𝜃 = 90°, Minimal bei 𝜃 = 0°
+Länge Antenne L = 𝝀  /  2,  Wellenlänge 𝝀  = 2 L [m]
+Wellenänge 𝝺
+c0 = Lichtgeschwindigkeit im Vakuum:
+[m/s] 	[Hz] 	[s]
+[m] 	[1/m]
++ links laufende Welle
+– rechts laufende Welle
+k = Anzahl Wellen pro m
+𝝀  Wellenlänge [m]
+T = Periode [s]
+y = Zeit [s] oder Distanz [m]
+k = Wellenzahl [m-1
+]
+Trägerfrequenz
+
+-- 8 of 12 --
+
+Dominique Schmitz, IT22tb_WIN 	Martin Gassner 	Grundlagen der Elektrotechnik und Digitaltechnik 	9/12
+Lichtbrechung
+Die Ausbreitungsgeschwindigkeit des
+Lichts in Medien ist frequenzabhängig.
+Die unterschiedliche Ausbreitungsgeschwindigkeit führt
+zu einer «Verschmierung» des Wellenpakets = Dispersion
+Lichtgeschwindigkeit cM
+im Material M
+Brechungsindex nM
+der Materials M
+� Prozent von c0
+Allgemeine Formeln:
+←Totalreflexion
+n2 → n1
+Totalreflexion →
+n 1 → n2
+n2 → n1
+Totalreflexion bei:
+Totale Reflexion
+n 1 → n2
+Totalreflexion bei:
+Diffraktion (Beugung)
+Trifft eine Welle auf ein Hindernis, wird die Welle gestreut oder gebogen.
+Wenn die Wellenlänge grösser ist als der Durchmesser des Lochs wird
+eine Kugelwelle erzeugt.
+Intensität I
+Energie pro Zeit, Leistung oder Intensität pro Kugeloberfäche A
+Energie, die durch Kugeloberfläche geht/ging, muss auch
+durch eine zwei Kugeloberfläche gehen/gegangen sein.
+r = Radius/Distanz
+Absorption
+Frequenz abhängig.
+Intensität I oder Leistung P am Ende der Stecke.
+Intensität I oder Leistung P beim Eintritt in das absorbierende Material.
+𝑥	 	Wegstrecke [m]
+𝛼	 	Dämpfungs- / Emissions- / Absorptionskoeffizient [1/m]
+(Ähnlich wie der Entladeprozess des Kondensators mit Zeitkonstante 𝜏.
+Aber nicht von der Zeit, sondern von der Wegstrecke abhängig)
+𝛼	 = 0 wenn 	= 	(= keine Dämpfung)
+Dezibel Q (dB)
+Schalintensitätsspiegel Q = Verhältnis zwischen Leistung P und Intensität I
+auf einer logarithmischen Skala (log10).
+Faktor (Verhältnis) Bsp: 70 [dB] = 107 [Faktor]
+-10 [dB] = 10-1 = 0.1 [Faktor]
+Dezibel addieren = Multiplizieren der Faktoren
+3 dB + 3 dB = 6 dB → 2 ⟑ 2 = 4 (Faktor)
+Menschiche Hörschwelle I0 = 10 -12 [W/m2 ]
+Singal to Noise Ratio (SNR)
+P Leistung
+I Intensität
+A Amplituden
+Dämpfung
+[Watt / m2]
+
+-- 9 of 12 --
+
+Dominique Schmitz, IT22tb_WIN 	Martin Gassner 	Grundlagen der Elektrotechnik und Digitaltechnik 	10/12
+Blip und Knall
+Ein Blip / Knall ist ein kurzes Signal.
+Die unterschiedliche Ausbreitungsgeschwindigkeit führt
+zu einer «Verschmierung» des Wellenpakets = Dispersion
+Blip
+Ein Blip besteht aus vielen Frequenzen, lokalisiert um eine Hauptfrequenz.
+Je schmaler das Blip, desto breiter das Spektrum → Prinzip der Unschärfe
+Δ𝑡
+Δ𝑓
+Δ𝑡 = Dauer (= Breite) des Signals [s]
+Δ𝑓 = Breite des Spektrums [Hz]
+Unschärfeprinzip
+Knall
+Je steiler die Flanken eines Signals,
+desto grösser der Anteil der hohen Frequenzen im Signal.
+Thermische Strahlung
+Kelvin ←→ Celcius
+Elektromagnetische Strahlung
+Photonenergie
+Photonenergie bei 1 Hz: 6.6261 × 10−34 J oder 4.1357 × 10−15 eV
+eV = J / 𝑒 , J = eV ⟑ 𝑒  	𝑒  = Elementarladung 𝑒  = 1.602 177 ⟑ 10-19 C
+eV = Betrag, um welche die kinterische Energie eines Elektron zunimmt,
+wenn es ein Beschleunigung von 1 V erfährt.
+[J] 	[J]
+Schwarzer Strahler
+Körper mit Reflexionsgrad ρ = 0 (= 1 – α), Absorptionsgrad α = 1
+für alle Frequenzen.
+Ein Körper der gut absorbiert, strahlt auch gut.
+Alles geht rein, aber alles geht auch raus.
+Stefan-Boltzmann Gesetz
+Abgegebene Leistung P (radiated heat) 	Stefan-Boltzmann Konstante:
+A = Oberfläche [m2
+]
+T = Temperatur
+Strahlungsgesetz von Planck
+Strahlungsintensität
+𝜆 = Wellenänge [m]
+f = Frequenz [Hz]
+T = Temperatur [C]
+Strahlungsbilanz (Schwarzer Strahler)
+Der Körper strahlt ab, empfängt aber auch Strahlung von der Umgebung.
+Mit Kelvin rechnen!
+[W]
+Strahlungsleistung
+[K] 	[K]
+𝐼 = Energiestrom (Energie pro Zeit) = Leistung P des Körpers mit T
+A = Oberfläche des Strahlers
+T = Oberflächentemparatur
+Tenv = Umgebungstemparatur
+Stefan-Boltzmann Konstante
+Grauer Strahler
+Graue Strahler strahlen in gewissen Wellenlängenbereichen nicht mit der
+ganzen Schwarzkörperintensität.
+= Emissionskoeffizient [1/m] für ein Material
+Strahlungsbilanz (Grauer Strahler)
+[W]
+Wien’sches Verschiebungsgesetz
+Maximale Strahlungsleistung
+Maximum des Spektrums bei geg. Temperatur T
+Intensität
+Wellenlänge λ [nm]
+[m]
+Wärmeübertragung
+– Wärmeleitung (Material)
+– Wärmeströmung (Luft)
+– Wärmestrahlung (Radiation)
+ℎ = Wärmeübergangskoeffizient [m2
+K/W] (Wärmeübergang zweier Materialien)
+𝐼 = Energiestrom (Energie pro Zeit) = Leistung P
+A = Oberfläche des Strahlers
+T = Oberflächentemparatur
+Tenv = Umgebungstemparatur
+[K] 	[K]
+[W]
+Die Energiebilanzrechnung schliesst dann
+alle betrachteten Wärmeströme ein:
+
+-- 10 of 12 --
+
+Dominique Schmitz, IT22tb_WIN 	Martin Gassner 	Grundlagen der Elektrotechnik und Digitaltechnik 	11/12
+Temperatur eines Planeten
+Albedo
+= Reflexionskoeffizient der Erde bezogen auf das Spektrum der Sonne.
+Intensität der Sonnenstrahlung
+auf der Erde
+Maximale Leistung P welche die Erde aufnehmen kann
+Thermische Bilanz der Erde (ohne Treibhauseffekt)
+Vektoren
+Skalarprodukt
+Kreuzprodukt (cross product)
+Nur für 3-dimensionale (ℝn
+) Vektoren. 	v 1 / x
+v 2 / y
+v 3 / z
+Diverses
+Winkelmass umrechnen
+Quadratmeter umrechnen
+→ m2
+x [km2] = x ⟑ (103)2 [m2] 	= x ⟑ 106 [m2]
+x [cm2] = x ⟑ (10-2)2 [m2] 	= x ⟑ 10-4 [m2]
+x [mm2] = x ⟑ (10-3)2 [m2] 	= x ⟑ 10-6 [m2]
+m2 →
+x [m2] 	= x ⟑ (10-3)2 [km2] = x ⟑ 10-6 [km2]
+x [m2] 	= x ⟑ (102)2 [cm2] = x ⟑ 104 [cm2]
+x [m2] 	= x ⟑ (103)2 [cm2] = x ⟑ 106 [mm2]
+Formelrad
+Seriellschaltung
+Parallelschaltung
+
+-- 11 of 12 --
+
+Dominique Schmitz, IT22tb_WIN 	Martin Gassner 	Grundlagen der Elektrotechnik und Digitaltechnik 	12/12
+Widerstandswert ablesen
+Vorsätze für Masseinheiten (metric prefix)
+
+-- 12 of 12 --
+

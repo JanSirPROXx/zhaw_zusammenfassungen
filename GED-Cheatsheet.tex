@@ -1,0 +1,334 @@
+% GED Cheatsheet -- Woche 1
+% Kompilieren mit: pdflatex GED-Cheatsheet.tex   (2x fuer Kopf-/Fusszeilen)
+% Benoetigte Pakete sind alle in TeX Live / MiKTeX / Overleaf enthalten.
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[a4paper,margin=8mm,includefoot,footskip=10pt]{geometry}
+\usepackage{multicol}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{arrows.meta,decorations.pathmorphing,calc}
+
+\definecolor{gedblau}{HTML}{1F3A5F}
+\definecolor{gedhell}{HTML}{EEF2F7}
+\definecolor{gedrot}{HTML}{B03030}
+\definecolor{gedgrau}{HTML}{888888}
+
+% ---- Layout ----
+\setlength{\columnsep}{5mm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+\linespread{0.95}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[L]{\scriptsize\color{gedgrau}GED -- Grundlagen der Elektro- und Digitaltechnik $\cdot$ Cheatsheet HS 2026}
+\fancyfoot[R]{\scriptsize\color{gedgrau}Blatt 1 $\cdot$ Seite \thepage/2}
+
+% ---- Bausteine ----
+\newtcolorbox{gbox}[1]{%
+  enhanced, sharp corners, boxrule=0.4pt, colframe=black!70, colback=white,
+  left=3pt,right=3pt,top=2pt,bottom=2pt, boxsep=0pt, before skip=0pt, after skip=3pt,
+  title={\color{gedblau}\bfseries\small #1},
+  coltitle=gedblau, colbacktitle=white, titlerule=0pt,
+  attach boxed title to top left={yshift=0pt,xshift=3pt},
+  boxed title style={empty,boxrule=0pt}, top=10pt,
+  overlay={\draw[black!70,line width=0.4pt] ([yshift=-9pt]frame.north west) -- ([yshift=-9pt]frame.north east);}}
+
+\newcommand{\banner}[1]{{\setlength{\fboxsep}{2pt}\colorbox{gedblau}{\makebox[\dimexpr\linewidth-4pt\relax][l]{\color{white}\bfseries\small #1}}}\par\vspace{3pt}}
+\newcommand{\bsp}[1]{\par\vspace{2pt}{\color{black!80}\leftskip=4pt\relax\rule[-1pt]{1pt}{8pt}\hspace{3pt}\textbf{Bsp:} #1\par}}
+\newcommand{\unit}[1]{\,\mathrm{#1}}
+\newcommand{\chip}[1]{{\setlength{\fboxsep}{1.5pt}\fcolorbox{gedblau!40}{gedhell}{#1}}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.05}
+\newcommand{\hd}[1]{\cellcolor{gedhell}\textbf{#1}}
+\usepackage{colortbl}
+\small
+
+\begin{document}
+\setlength{\abovedisplayskip}{2pt}\setlength{\belowdisplayskip}{2pt}
+\setlength{\abovedisplayshortskip}{1pt}\setlength{\belowdisplayshortskip}{1pt}
+
+% ======================= SEITE 1 =======================
+{\color{gedblau}\rule{\linewidth}{1.2pt}}\vspace{-6pt}
+\par\textbf{\large GED Cheatsheet bichjan}\hfill{\scriptsize\color{black!60}Grundlagen der Elektro- und Digitaltechnik $\cdot$ HS 2026 $\cdot$ Notation: [\,] = SI-Einheit, \textbf{fett} = Merksatz, Bsp = Beispiel aus Übung}
+\par\vspace{1pt}{\color{gedblau}\rule{\linewidth}{1.2pt}}
+\vspace{3pt}
+
+\banner{Woche 1 $\cdot$ Grundbegriffe: Kraft, Bewegung, Ladung, Energie}
+
+\begin{multicols}{2}
+\scriptsize
+
+\begin{gbox}{Kraft $F$ -- 2.\ Newton'sches Gesetz}
+\textbf{Eine Kraft verändert die Geschwindigkeit} eines Objekts (beschleunigt oder bremst). Kräfte sind Vektoren; wir rechnen 1-dimensional mit Zahlen (Vorzeichen = Richtung).
+
+\vspace{2pt}
+\begin{tabular}{@{}l@{\hspace{6pt}}L{0.6\linewidth}@{}}
+$F = m\cdot a$ & $F$ Kraft [N] $\cdot$ $m$ Masse [kg] $\cdot$ $a$ Beschl.\ [m/s$^2$]\\
+$a = F/m$ & Gleiche Kraft, doppelte Masse $\to$ halbe Beschleunigung
+\end{tabular}
+\vspace{2pt}
+
+\chip{$1\unit{N} = 1\unit{kg\cdot m/s^2}$} = Kraft, die 1 kg in 1 s um 1 m/s schneller macht. Gewichtskraft: $F_g = m\cdot g$, $g = 9.81$ m/s$^2$.
+\bsp{70 kg Mensch: $F_g = 70 \cdot 9.81 = 686.7$ N. Crash 90 km/h $\to$ 0 auf 1 m: $a = v^2/(2s) = 25^2/2 = 312.5$ m/s$^2$ ($\approx 32\,g$), Gurtkraft $F = 70\cdot312.5 = 21\,875$ N. \textbf{Knautschzone = längerer Bremsweg $s$ $\to$ kleinere $a$ $\to$ kleinere Kraft.}}
+\end{gbox}
+
+\begin{gbox}{Bewegung mit konstanter Beschleunigung ($a$ = konst.)}
+\textbf{Konstante Kraft $\Leftrightarrow$ konstante Beschleunigung.} Beschleunigung = Geschwindigkeitsänderung pro Zeit: $a = \Delta v/\Delta t \Rightarrow \Delta v = a\cdot\Delta t$.
+
+\vspace{2pt}
+\begin{tabular}{@{}l@{\hspace{6pt}}L{0.45\linewidth}@{}}
+$v(t) = v_0 + a(t-t_0)$ & Geschwindigkeit [m/s]; linear in $t$\\
+$s(t) = s_0 + v_0(t-t_0) + \tfrac{a}{2}(t-t_0)^2$ & Position [m]; quadratisch in $t$. $s_0, v_0$ = Werte bei $t_0$ (meist 0)\\
+$a = 0$: $s(t) = v_0 t$ & gleichförmige Bewegung
+\end{tabular}
+\vspace{2pt}
+
+\textbf{«BMS»-Tabelle: nur für $a$ = konst.\ und $v_0 = s_0 = t_0 = 0$ (Start aus Ruhe)!}
+\vspace{2pt}
+
+\begin{center}
+\begin{tabular}{|L{0.9cm}|c|c|c|c|}\hline
+\hd{geg.$\downarrow$} & \hd{$t$ [s]} & \hd{$s$ [m]} & \hd{$v$ [m/s]} & \hd{$a$ [m/s$^2$]}\\\hline
+ohne $t$ & -- & $\frac{v^2}{2a}$ & $\sqrt{2as}$ & $\frac{v^2}{2s}$\\\hline
+ohne $s$ & $\frac{v}{a}$ & -- & $a\,t$ & $\frac{v}{t}$\\\hline
+ohne $v$ & $\sqrt{\frac{2s}{a}}$ & $\frac{a t^2}{2}$ & -- & $\frac{2s}{t^2}$\\\hline
+ohne $a$ & $\frac{2s}{v}$ & $\frac{v t}{2}$ & $\frac{2s}{t}$ & --\\\hline
+\end{tabular}
+\end{center}
+\vspace{2pt}
+
+\textbf{Bremsweg} (von $v$ auf 0): $s = v^2/(2|a|)$ $\to$ \textbf{Bremsweg $\propto v^2$} (doppelte Geschw.\ = 4-facher Bremsweg). Bremsen wandelt $E_{\mathrm{kin}}$ in Wärme um.
+\bsp{60 km/h = 16.67 m/s; in 1 s: $\Delta s = 16.67$ m. Bremsen mit $a = 1$ m/s$^2$: $s = 16.67^2/2 \approx 139$ m. Überholen: $s = v t$ nur bei $v$ = konst.\ $\to$ $v_A t + 45\,\text{km} = v_B t \Rightarrow t = 45\,\text{km}/(v_B - v_A)$.}
+\end{gbox}
+
+\begin{gbox}{$v$-$t$-Diagramm lesen}
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,font=\tiny,line width=0.4pt]
+  \fill[gedblau!15] (0,0) -- (0,8) -- (26,19) -- (26,0) -- cycle;
+  \draw[-{Latex[length=1.4mm]}] (0,0) -- (36,0) node[below left]{$t$};
+  \draw[-{Latex[length=1.4mm]}] (0,0) -- (0,23) node[left]{$v$};
+  \draw[gedblau,line width=0.7pt] (0,8) -- (30,21) node[above left=-1pt]{$a>0$};
+  \draw[black!50,dashed] (0,12) -- (30,12) node[above left=-1pt]{$a=0$};
+  \draw[gedrot,line width=0.6pt] (0,19) -- (30,4) node[above right=-2pt]{$a<0$};
+  \node[anchor=west] at (7,4) {Fläche $=\Delta s$};
+  \node[left] at (0,8) {$v_0$};
+\end{tikzpicture}
+\end{center}
+\textbf{Steigung} der Kurve = Beschleunigung $a$. Gerade $\Rightarrow a$ = konst.; waagrecht $\Rightarrow a = 0$.\\
+\textbf{Fläche} unter der Kurve = zurückgelegter Weg $\Delta s$.\\
+Kurve über $t$-Achse: $v>0$. Kurve nähert sich der Achse: Betrag von $v$ nimmt ab (Bremsen).\\
+Analog: Steigung im $s$-$t$-Diagramm = $v$.
+\end{gbox}
+
+\begin{gbox}{Spannung $U$ (Vorschau Woche 2)}
+\[ U = \frac{E}{q}\qquad E_{\mathrm{pot,el}} = q\cdot U \]
+\textbf{Spannung = Energie pro Ladung}, [V] = [J/C]. Bild: Wie Wasser eine Höhendifferenz hinunterfällt, «fallen» Ladungen eine Spannung hinunter und geben $E = qU$ ab (Heizstab, Motor). \textbf{1 eV} = Energie von 1 $e$ bei 1 V = $1.602\cdot10^{-19}$ J.
+\end{gbox}
+
+\begin{gbox}{Schwerkraft, freier Fall \& Wurf}
+Nahe Erdboden: jede Masse erfährt $\vec{a} = (0,0,-g)$, $\mathbf{g = 9.81}$ m/s$^2$, unabhängig von $m$ (ohne Luftwiderstand). Nur die $z$-Richtung wird beschleunigt.
+
+\vspace{2pt}
+$v_x(t) = v_{x,0}$ \qquad $s_x(t) = s_{x,0} + v_{x,0}t$\\
+$v_z(t) = v_{z,0} - g t$ \qquad $s_z(t) = s_{z,0} + v_{z,0}t - \tfrac{1}{2}g t^2$
+
+\vspace{2pt}
+\textbf{Horizontal ($x,y$): gleichförmig. Vertikal ($z$): gleichmässig beschleunigt. Beide unabhängig voneinander!} Abwurf unter Winkel $\varphi$: $v_{x,0} = v_0\cos\varphi$, $v_{z,0} = v_0\sin\varphi$.
+
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,font=\tiny,line width=0.4pt]
+  \draw[-{Latex[length=1.4mm]}] (0,0) -- (44,0) node[below left]{$x$};
+  \draw[-{Latex[length=1.4mm]}] (0,0) -- (0,24) node[left]{$z$};
+  \draw[gedblau,line width=0.7pt] (0,0) parabola bend (20,20) (40,0);
+  \draw[gedrot,-{Latex[length=1.2mm]},line width=0.5pt] (0,0) -- (8,8) node[above left=-2pt]{$v_0$};
+  \draw[gedrot] (4,0) arc (0:45:4) ;
+  \node[gedrot] at (7,1.6) {$\varphi$};
+  \draw[black!50,dashed] (20,0) -- (20,20);
+  \node[anchor=west,inner sep=1pt] at (20.5,11) {$h_{\max}$};
+  \draw[gedblau,-{Latex[length=1.2mm]}] (20,20) -- (28,20) node[above=-2pt]{$v_z=0$};
+  \draw[black!60] (0,-3) -- (40,-3); \draw[black!60] (40,-4) -- (40,-2);
+  \node[below] at (30,-3) {$R$ (Reichweite)};
+\end{tikzpicture}
+\end{center}
+
+\begin{tabularx}{\linewidth}{|X|c|l|}\hline
+Zeit bis höchster Punkt ($v_z = 0$) & $t_{\max} = v_{z,0}/g$ & [s]\\\hline
+Maximale Höhe & $h_{\max} = \dfrac{v_{z,0}^2}{2g}$ & [m]\\\hline
+Flugzeit (Landung auf Abwurfhöhe) & $t_{\mathrm{Flug}} = 2\,t_{\max}$ & [s]\\\hline
+Reichweite & $R = v_{x,0}\cdot t_{\mathrm{Flug}}$ & [m]\\\hline
+Freier Fall aus Ruhe, Höhe $h$ & $v = \sqrt{2gh}$, $t = \sqrt{2h/g}$ & [m/s], [s]\\\hline
+\end{tabularx}
+\bsp{Fall aus 5 m: $v = \sqrt{2\cdot9.81\cdot5} \approx 9.9$ m/s. Kanone $v_0 = 300$ m/s, 45$^\circ$: $v_{x,0} = v_{z,0} = 212.1$ m/s; $t_{\max} = 21.6$ s; $h_{\max} = 2294$ m; $R = 212.1\cdot2\cdot21.6 = 9174$ m.}
+\end{gbox}
+
+\begin{gbox}{Federkraft (Hooke) \& Federenergie}
+$F_s = -k(x-L)$ \qquad $|F_s| = k\,|x-L|$ \qquad $E_{\mathrm{Feder}} = \tfrac{1}{2}k(x-L)^2$
+
+$k$ Federkonstante [N/m = kg/s$^2$] $\cdot$ $L$ Ruhelänge [m] $\cdot$ $x$ aktuelle Länge [m] $\cdot$ $x-L$ = \textbf{Auslenkung} (gedehnt $>0$, gestaucht $<0$)
+
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,font=\tiny,line width=0.4pt]
+  \fill[black!60] (0,-6) rectangle (1.5,6);
+  \draw[gedblau,line width=0.6pt,decorate,decoration={coil,aspect=0.6,segment length=2mm,amplitude=1.6mm}] (1.5,0) -- (22,0);
+  \draw[fill=gedblau!15,gedblau] (22,-4) rectangle (30,4);
+  \node at (26,0) {$m$};
+  \draw[black!60] (1.5,-8) -- (22,-8); \draw[black!60] (1.5,-9) -- (1.5,-7); \draw[black!60] (22,-9) -- (22,-7);
+  \node[below] at (12,-8) {$x$ (Länge)};
+  \draw[gedrot,{Latex[length=1.2mm]}-,line width=0.5pt] (33,0) -- (42,0);
+  \node[gedrot,above] at (37,0.5) {$F_s$ zur Ruhelage};
+\end{tikzpicture}
+\end{center}
+
+\textbf{Federkraft $\propto$ Auslenkung, zeigt zur Ruhelage zurück.} Kraft ändert sich mit $x$ $\Rightarrow$ \textbf{Beschleunigung NICHT konstant $\Rightarrow$ BMS-Formeln unbrauchbar, Energieerhaltung nutzen!}
+
+Losgelassene Masse: $v$ maximal bei $x = L$ (dort $F = 0$, $a = 0$). Danach bremst die Feder; Masse schwingt symmetrisch um $L$ (reibungsfrei).
+\[ \tfrac{1}{2}k(x-L)^2 = \tfrac{1}{2}mv_{\max}^2 \Rightarrow v_{\max} = |x-L|\sqrt{k/m} \]
+\bsp{$k = 5000$ N/m, $L = 40$ cm, um 10 cm gestaucht, $m = 2$ kg: $E = \tfrac12\cdot5000\cdot0.1^2 = 25$ J; $F_0 = +500$ N, $a_0 = 250$ m/s$^2$; $v_{\max} = 5$ m/s bei $x = 40$ cm; Schwingung zwischen 30 und 50 cm.}
+\end{gbox}
+
+\end{multicols}
+
+\newpage
+% ======================= SEITE 2 =======================
+\banner{Woche 1 (Fortsetzung) $\cdot$ Ladung, Energie, Einheiten}
+
+\begin{multicols}{2}
+\scriptsize
+
+\begin{gbox}{Gravitationskraft \& Coulombkraft (gleiche Struktur!)}
+\begin{tabularx}{\linewidth}{|l|X|X|}\hline
+ & \hd{Gravitation (Massen)} & \hd{Coulomb (Ladungen)}\\\hline
+Betrag & $|F| = \gamma\dfrac{m_1 m_2}{r^2}$ & $|F| = \dfrac{1}{4\pi\varepsilon_0}\dfrac{|q_1 q_2|}{r^2}$\\\hline
+Konstante & $\gamma$ (auch $G$) $= 6.67\cdot10^{-11}$ N$\cdot$m$^2$/kg$^2$ & $\varepsilon_0 = 8.854\cdot10^{-12}$ C$^2$/(J$\cdot$m) = F/m; $k_e = 1/(4\pi\varepsilon_0) = 8.99\cdot10^{9}$ N$\cdot$m$^2$/C$^2$\\\hline
+Richtung & \textbf{immer anziehend} & \textbf{gleiche Vorzeichen: abstossend; ungleiche: anziehend}\\\hline
+Einheiten & $m$ [kg], $r$ [m], $F$ [N] & $q$ [C], $r$ [m], $F$ [N]\\\hline
+\end{tabularx}
+
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,font=\tiny,line width=0.4pt]
+  \draw[fill=gedrot!15,gedrot] (0,0) circle (2.5); \node at (0,0) {$+$};
+  \draw[fill=gedrot!15,gedrot] (20,0) circle (2.5); \node at (20,0) {$+$};
+  \draw[-{Latex[length=1.2mm]}] (-3,0) -- (-8,0);
+  \draw[-{Latex[length=1.2mm]}] (23,0) -- (28,0);
+  \node[right] at (29,0) {abstossen};
+  \draw[fill=gedrot!15,gedrot] (0,-9) circle (2.5); \node at (0,-9) {$+$};
+  \draw[fill=gedblau!15,gedblau] (20,-9) circle (2.5); \node at (20,-9) {$-$};
+  \draw[-{Latex[length=1.2mm]}] (3,-9) -- (8,-9);
+  \draw[-{Latex[length=1.2mm]}] (17,-9) -- (12,-9);
+  \node[right] at (29,-9) {anziehen};
+  \draw[black!50] (0,-4.5) -- (20,-4.5); \node[above] at (10,-4.4) {$r_{12}$};
+\end{tikzpicture}
+\end{center}
+
+\textbf{Abstandsgesetz:} $F \propto 1/r^2$ $\to$ $2r \Rightarrow F/4$; $3r \Rightarrow F/9$ ($F r^2$ = konst., NICHT $F r$). Kraft nicht konstant $\Rightarrow$ keine BMS-Formeln. Beide Massen/Ladungen verdoppelt $\Rightarrow$ $F\cdot4$. Vektoriell: $\vec{F}_{12}$ = Kraft auf 1 durch 2; $\vec{r}_{12} = \vec{r}_1 - \vec{r}_2$ zeigt von 2 nach 1.
+\bsp{Mehrere Ladungen: Beträge einzeln mit Coulomb rechnen, dann \textbf{mit Vorzeichen (Richtung) addieren}. $q_1 = 6$ µC, $q_2 = -4$ µC bei 3 m, $q_3 = 6$ µC bei 6 m: $F_{2\to1} = 8.99\cdot10^{9}\cdot6\cdot10^{-6}\cdot4\cdot10^{-6}/3^2 = 0.0240$ N; $F_{3\to1} = 0.0090$ N $\Rightarrow F_{\mathrm{res}} = 15.0$ mN nach rechts.}
+\end{gbox}
+
+\begin{gbox}{Elektrische Ladung $q$, $Q$}
+Grundursache aller elektrischen Phänomene. \textbf{Zwei Arten: positiv und negativ.} Einheit \textbf{Coulomb [C] = A$\cdot$s} (1 C = Ladung, die bei 1 A in 1 s fliesst).
+
+\begin{tabularx}{\linewidth}{|l|l|X|}\hline
+Elementarladung & $e = 1.602\cdot10^{-19}$ C & kleinste freie Ladungseinheit\\\hline
+Elektron & $q = -e$, $m_e = 9.109\cdot10^{-31}$ kg & leicht $\Rightarrow$ bei gleicher Energie schneller\\\hline
+Proton & $q = +e$, $m_p = 1.673\cdot10^{-27}$ kg & $\approx 1836\, m_e$\\\hline
+$N$ Elektronen & $Q = N(-e) = -Ne$ & Ladung ist immer Vielfaches von $e$\\\hline
+\end{tabularx}
+
+\textbf{Ladungserhaltung:} Gesamtladung bleibt in jedem Prozess exakt erhalten. Wandern $N$ Elektronen von A nach B: $\Delta Q_A = +Ne$, $\Delta Q_B = -Ne$, Summe = 0. «Positiver» $\neq$ «positiv», wenn A vorher schon geladen war.
+\bsp{Speicherzelle mit $10^4$ zusätzlichen Elektronen: $Q = -10^4\cdot1.6\cdot10^{-19}$ C $= -1.6$ fC.}
+\end{gbox}
+
+\begin{gbox}{Energieformen \& Arbeit}
+Einheit \textbf{Joule [J] = N$\cdot$m = kg$\cdot$m$^2$/s$^2$ = W$\cdot$s = C$\cdot$V}. Energie ist wie eine «Währung»: umwandelbar, Gesamtbetrag bleibt.
+
+\begin{tabularx}{\linewidth}{|L{2.1cm}|l|X|}\hline
+\hd{Form} & \hd{Formel} & \hd{Grössen \& Einheiten}\\\hline
+Lageenergie & $E_{\mathrm{pot}} = m g h$ & $m$ [kg], $g = 9.81$ m/s$^2$, $h$ [m]. Ist eine \textbf{Differenz}: $h = 0$ frei wählbar\\\hline
+Kinetische Energie & $E_{\mathrm{kin}} = \tfrac12 m v^2$ & $v$ [m/s]. $v$ verdoppeln $\Rightarrow 4E$\\\hline
+Federenergie & $E_{\mathrm{Feder}} = \tfrac12 k(x-L)^2$ & $k$ [N/m], $x$, $L$ [m]\\\hline
+El.\ pot.\ Energie & $E_{\mathrm{pot,el}} = qU$ & $q$ [C], $U$ [V]; 1 V = 1 J/C\\\hline
+Wärme & $E_{\mathrm{therm}}$ & Reibung, Bremsen $\to$ «verlorene» Energie landet hier\\\hline
+\textbf{Arbeit} & $W = F\cdot s$ & gilt für $F \parallel s$. Kraft gegen Bewegung $\Rightarrow W < 0$\\\hline
+\end{tabularx}
+
+\textbf{Arbeit ist keine gespeicherte Energie}, sondern die Menge, die eine Kraft mechanisch überträgt (Anheben $\to E_{\mathrm{pot}}$, Beschleunigen $\to E_{\mathrm{kin}}$).
+\bsp{Block 5 m gegen Reibung 20 N ziehen: $W = 100$ J. Gurt beim Crash: $W = -21\,875$ J $= \Delta E_{\mathrm{kin}} = 0 - \tfrac12\cdot70\cdot25^2$.}
+\end{gbox}
+
+\begin{gbox}{Energieerhaltungssatz -- Lösungsrezept}
+\begin{tcolorbox}[colback=gedhell,colframe=gedblau!40,boxrule=0.4pt,sharp corners,left=3pt,right=3pt,top=1pt,bottom=1pt,boxsep=0pt]
+\textbf{Gesamtenergie im System + Umgebung bleibt immer erhalten.} $E_{\mathrm{Anfang}} = E_{\mathrm{Ende}}$. Systemgrenze festlegen -- Energie kann das System verlassen (Wärme)!
+\end{tcolorbox}
+\begin{enumerate}[leftmargin=12pt,itemsep=0pt,topsep=2pt,parsep=0pt]
+\item Zustand A (Anfang) und E (Ende) wählen; Nullpunkt für $h$ festlegen.
+\item Alle Energieformen in A und E aufschreiben (konstante weglassen).
+\item $E_{\mathrm{pot,A}} + E_{\mathrm{kin,A}} + \ldots = E_{\mathrm{pot,E}} + E_{\mathrm{kin,E}} + \ldots$
+\item Nach gesuchter Grösse auflösen. Funktioniert auch bei \textbf{nicht konstanter} Kraft (Feder, Coulomb)!
+\end{enumerate}
+\vspace{2pt}
+\begin{tabularx}{\linewidth}{|X|l|l|}\hline
+\hd{Situation} & \hd{Bilanz} & \hd{Ergebnis}\\\hline
+Fall aus Höhe $h$ & $mgh = \tfrac12 mv^2$ & $v = \sqrt{2gh}$\\\hline
+Wurf nach oben & $\tfrac12 mv_{z,0}^2 = mgh_{\max}$ & $h_{\max} = \frac{v_{z,0}^2}{2g}$\\\hline
+Feder $\to$ Masse & $\tfrac12 k(x-L)^2 = \tfrac12 mv^2$ & $v = |x-L|\sqrt{k/m}$\\\hline
+Ladung fällt $U$ hinunter & $qU = \tfrac12 mv^2$ & $v = \sqrt{2qU/m}$\\\hline
+Bremsen & $\tfrac12 mv^2 = F_{\mathrm{Br}}\cdot s$ & $E_{\mathrm{kin}} \to$ Wärme\\\hline
+\end{tabularx}
+\bsp{Blumentopf fällt 7 m: $v = \sqrt{2\cdot9.81\cdot7} = 11.7$ m/s. Proton, $U = 10$ V: $v = \sqrt{2\cdot1.6\cdot10^{-19}\cdot10/1.67\cdot10^{-27}} \approx 4.38\cdot10^{4}$ m/s; $qU = 1.6\cdot10^{-18}$ J = 10 eV. Einheitencheck: C$\cdot$V = J, J/kg = m$^2$/s$^2$.}
+\end{gbox}
+
+\begin{gbox}{Merksätze \& typische Fallen}
+\begin{itemize}[leftmargin=10pt,itemsep=0pt,topsep=0pt,parsep=0pt]
+\item \textbf{Proportional} $y \propto x$: $y/x$ konst. \textbf{Umgekehrt prop.} $y \propto 1/x$: $yx$ konst., wird nie 0. \textbf{Quadratisch umgekehrt}: $yx^2$ konst.
+\item Konstante Kraft (Gewicht, Gurt, Reibung) $\Rightarrow$ BMS-Formeln. Veränderliche Kraft (Feder, Gravitation, Coulomb) $\Rightarrow$ Energieerhaltung.
+\item Vorzeichen = Richtung: positive Achse wählen, dann konsequent bleiben ($a = -312.5$ m/s$^2$ beim Bremsen).
+\item Bei Summen von Kräften: Beträge einzeln berechnen, Richtung erst beim Addieren berücksichtigen.
+\item Newton beschleunigt «einmalig», Joule = Kraft über eine Strecke, Watt = Energie pro Zeit.
+\item Wurf: horizontal und vertikal getrennt rechnen; am höchsten Punkt $v_z = 0$, $v_x$ bleibt.
+\end{itemize}
+\end{gbox}
+
+\begin{gbox}{Einheiten, Konstanten, Umrechnen}
+\begin{tabularx}{\linewidth}{|L{1.9cm}|l|l|X|}\hline
+\hd{Grösse} & \hd{Sym.} & \hd{Einheit} & \hd{in SI-Basiseinheiten}\\\hline
+Weg/Masse/Zeit & $s, m, t$ & m, kg, s & Basis\\\hline
+Geschwindigkeit & $v$ & m/s & 1 m/s = 3.6 km/h\\\hline
+Beschleunigung & $a, g$ & m/s$^2$ & 1 $g$ = 9.81 m/s$^2$\\\hline
+Kraft & $F$ & Newton N & kg$\cdot$m/s$^2$\\\hline
+Energie, Arbeit & $E, W$ & Joule J & N$\cdot$m = kg$\cdot$m$^2$/s$^2$ = W$\cdot$s = C$\cdot$V; 1 kWh = $3.6\cdot10^{6}$ J\\\hline
+Leistung & $P$ & Watt W & J/s = V$\cdot$A\\\hline
+Ladung & $q, Q$ & Coulomb C & A$\cdot$s\\\hline
+Strom & $I$ & Ampere A & C/s (Basis)\\\hline
+Spannung & $U$ & Volt V & J/C = W/A = kg$\cdot$m$^2$/(s$^3\cdot$A)\\\hline
+Federkonstante & $k$ & N/m & kg/s$^2$\\\hline
+\end{tabularx}
+\vspace{2pt}
+
+\textbf{Präfixe:} T $10^{12}$ $\cdot$ G $10^{9}$ $\cdot$ M $10^{6}$ $\cdot$ k $10^{3}$ $\cdot$ m $10^{-3}$ $\cdot$ µ $10^{-6}$ $\cdot$ n $10^{-9}$ $\cdot$ p $10^{-12}$ $\cdot$ f $10^{-15}$\\
+\textbf{km/h $\to$ m/s:} $\div 3.6$ (60 km/h = 16.67 m/s; 90 km/h = 25 m/s) $\cdot$ \textbf{m/s $\to$ km/h:} $\times 3.6$\\
+\textbf{Flächen:} 1 km$^2$ = $10^{6}$ m$^2$, 1 cm$^2$ = $10^{-4}$ m$^2$, 1 mm$^2$ = $10^{-6}$ m$^2$ (Faktor quadrieren!)\\
+\textbf{Zeit:} 1 h = 3600 s, 1 min = 60 s, 30 s = 1/120 h
+
+\vspace{2pt}
+\textbf{Immer in SI rechnen} (m, kg, s), dann stimmen die Einheiten automatisch. Einheitencheck am Ende: $\sqrt{\mathrm{J/kg}} = \sqrt{\mathrm{m^2/s^2}} = \mathrm{m/s}$ \checkmark
+\end{gbox}
+
+\end{multicols}
+\end{document}

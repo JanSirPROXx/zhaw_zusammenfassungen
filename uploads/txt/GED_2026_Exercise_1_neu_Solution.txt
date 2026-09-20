@@ -1,0 +1,355 @@
+1
+ZHAW Zurich University of Applied Sciences
+Lösungen GED Übung 1
+Aufgabe 1
+a) Wir müssen km in Meter und Stunden in Sekunden verwandeln:
+𝑣 = 60 km
+1 h = 60 000 m
+3600 s = 16.67 m/s
+𝛥𝑠 = 𝑣𝛥𝑡 = 16.67 m/s · 1 s = 16.67 m
+b) Rechnen Sie in SI-Einheiten! Der Tabelle in der Vorlesung (oder noch viel besser: einer
+eigenen Überlegung!) entnehmen Sie:
+𝑠 = 𝑣2
+2𝑎 = (16.67 m/s)2
+2 · 1 m/s² ≈ 139 m
+c) Aus s = v²/(2a) folgt v = √(2as). Für den freien Fall setzen wir a = g und s = h ein:
+𝑣 = √2𝑔ℎ = √2 · 9.81 m/s² · 5 m ≈ 9.90 m/s
+Die Geschwindigkeit ist nach unten gerichtet. Der Betrag beträgt ungefähr 10 m/s; bei einer
+nach oben positiven Achse ist die Geschwindigkeitskomponente negativ.
+Worum geht es in dieser Aufgabe? Wir legen immer wieder grössten Wert auf die
+Feststellung, dass die «BMS»-Formeln zu Ort, Zeit, Geschwindigkeit und Beschleunigung
+ausschliesslich für konstante Beschleunigungen gelten. Dies ist ein Spezialfall. Allerdings
+zeigte sich in der Praxis, dass dies ein relativ wichtiger Spezialfall ist, speziell da die
+Erdbeschleunigung oder die Beschleunigung und die Abbremsung eines Autos sehr gut mit
+konstanten Beschleunigungen approximiert werden können.
+Aufgabe 2
+Für die kinetische Energie gilt:
+𝐸𝑘𝑖𝑛,1 = 𝑚𝑣2
+2
+Eine Verdoppelung der Geschwindigkeit und eine Halbierung der Masse bedeutet:
+
+-- 1 of 10 --
+
+2
+𝐸𝑘𝑖𝑛,2 =
+𝑚
+2 (2𝑣)2
+2 = 𝑚𝑣2 = 2𝐸𝑘𝑖𝑛,1
+Die kinetische Energie wird also verdoppelt.
+Aufgabe 3
+Die Gesamtladung ist die Summe der Ladungen aller zusätzlich eingelagerten Elektronen. Da
+jedes Elektron dieselbe Ladung qₑ = −e trägt, gilt bei N Elektronen:
+𝑄 = 𝑁𝑞𝑒 = −𝑁𝑒
+Wir setzen die Anzahl N = 10⁴ und die positive Elementarladung e = 1.6 · 10⁻¹⁹ C ein:
+𝑄 = −104 · 1.6 · 10−19 C = −1.6 · 10−15 C
+Die Gesamtladung der zusätzlichen Elektronen beträgt −1.6 · 10⁻¹⁵ C. Ihr Betrag ist 1.6 · 10⁻¹⁵
+C = 1.6 fC. Das Minuszeichen entsteht durch die negative Ladung der Elektronen. Nach der
+vereinbarten Zuordnung im Aufgabenmodell repräsentiert dieser Zustand den Bitwert 1.
+Worum geht es in dieser Aufgabe? Sie verknüpfen die Anzahl gespeicherter Elektronen mit
+einer messbaren elektrischen Ladung. Die Zuordnung der Bitwerte ist eine Festlegung des
+Modells; die Ladung der Elektronen bleibt negativ.
+Aufgabe 4
+Wenn die Geschwindigkeit positiv ist, liegt die v-t-Kurve über der Geraden 𝑣 = 0 (also
+oberhalb der 𝑡-Achse). Wenn die Beschleunigung positiv ist, zeigt die Kurve nach oben.
+Anhand dieser Kriterien können wir die Fragen beantworten.
+a) Die Kurve (c) beschreibt eine Bewegung eines Teilchens mit positiver Geschwindigkeit
+und zunehmendem Geschwindigkeitsbetrag, weil 𝑣(𝑡) über der 𝑡- Achse liegt und eine
+positive Steigung aufweist (nach oben zeigt).
+b) Die Kurve (a) beschreibt eine Bewegung eines Teilchens mit positiver Geschwindigkeit
+und der Beschleunigung null, weil 𝑣(𝑡) oberhalb der 𝑡-Achse liegt und sich nicht
+verändert.
+c) Die Kurven (c), (d) und (e) beschreiben Bewegungen eines Teilchens mit konstanter
+und von null verschiedener Beschleunigung, weil 𝑣(𝑡) sich linear verändert.
+d) Die Kurve (e) beschreibt eine Bewegung eines Teilchens mit abnehmendem
+Geschwindigkeitsbetrag.
+Worum geht es in dieser Aufgabe? Sie sollen qualitativ textbasierte Beschreibungen von
+Phänomenen mit Grafiken in Verbindung setzen. Unabhängig davon, ob es sich um
+Geschwindigkeiten oder etwas anderes handelt, ist dies eine wichtige Fähigkeit.
+
+-- 2 of 10 --
+
+3
+Aufgabe 5
+Im Verlauf der Kollision wird der Fahrer von 90 km/h auf null hinuntergebremst und legt dabei
+einen Meter zurück. Unsere Aufgabe besteht nun darin, die dafür nötige Beschleunigung zu
+berechnen. Wenn wir diese kennen, dann können wir mittels der Newtonschen Beziehung die
+Kraft auf den Fahrer sofort berechnen.
+Wir starten mit der Beziehung:
+|𝑎| = 𝑣2
+2𝑠 (1)
+Wir wählen die ursprüngliche Fahrtrichtung als positive Richtung. 𝑎 = −312.5 ms−2 (Das ist
+etwa das 32 fache der Erdbeschleunigung!). Mithilfe von:
+𝐹 = 𝑚𝑎 (2)
+erhalten wir eine Gurtkraft von 𝐹 = 70 kg · (−312.5 m/s²) = −21 875 N. Dies ist die Kraft,
+welche die Sicherheitsgurte auf den Körper des Fahrers ausüben.
+Beachten Sie, dass die Schwere der Verletzung von der Grösse der einwirkenden Kraft
+abhängt. Wenn Sie die Formel (1) betrachten, sehen Sie, dass eine Vergrösserung des
+Bremswegs zu einer Reduktion der Beschleunigung und damit zu einer Reduktion der
+wirkenden Kräfte führt. Das ist der ganze Witz der Knautschzone; sie macht nichts anderes,
+als den Bremsweg ihres Körpers im Falle eines Aufpralls zu verlängern.
+b) Kraft und Verschiebung sind entgegengesetzt gerichtet. Die Arbeit der Gurtkraft ist daher
+negativ:
+𝑊 = 𝐹𝑠 = (−21 875 N) · 1 m = −21 875 J
+Zum Vergleich berechnen wir die Änderung der kinetischen Energie:
+𝛥𝐸𝑘𝑖𝑛 = 𝑚𝑣2
+2 − 𝑚𝑣02
+2
+𝛥𝐸𝑘𝑖𝑛 = 0 J − 70 kg · (25 m/s)2
+2 = −21 875 J = 𝑊
+Die kinetische Energie nimmt genau um den Betrag der vom Gurt entzogenen Energie ab.
+Die Gesamtenergie bleibt erhalten; Energie wird auf Fahrzeug und Rückhaltesystem
+übertragen und unter anderem in Verformung und innere Energie umgesetzt.
+Worum geht es in dieser Aufgabe? Sie sollen durch Kombination der Beziehung zwischen
+Kraft und Beschleunigung sowie der Beziehungen zwischen Ort, Zeit, Geschwindigkeit und
+Beschleunigung für den Fall konstanter Beschleunigung die Kraft auf einen Fahrer berechnen.
+Dabei erkennen Sie den Nutzen der Knautschzone; eine Knautschzone ist nichts anderes, als
+eine Möglichkeit, die Bremsstrecke des Menschen im Auto zu verlängern.
+
+-- 3 of 10 --
+
+4
+Aufgabe 6
+a) Wenn die Feder um 10 cm gestaucht wird, beträgt ihre Länge x = 30 cm; anders gesagt:
+𝑥 − 𝐿 = −10 𝑐𝑚. Die Energie zur Stauchung der Feder beträgt:
+𝐸𝑠 = 𝑘
+2 (𝑥 − 𝐿)2 = 5000 N/m
+2 · (−0.10 m)2 = 25 J
+b) Die Beschleunigung ist nicht konstant, da die Federkraft von der Auslenkung/Stauchung
+der Feder abhängt.
+c) Wir wählen die positive Richtung von der Wand weg. Die Federkraft wirkt der Auslenkung
+entgegen. Unmittelbar nach dem Loslassen gilt x₀ − L = −0.10 m. Nach dem Hooke’schen und
+dem Newtonschen Gesetz:
+𝐹0 = −𝑘(𝑥0 − 𝐿), 𝑎0 = 𝐹0
+𝑚
+𝐹0 = −5000 N/m · (−0.10 m) = +500 N
+𝑎0 = 500 N
+2 kg = +250 m/s²
+Die Kraft und die Beschleunigung zeigen von der Wand weg, zunächst also zur Ruhelage der
+Feder.
+d) Die maximale Geschwindigkeit ist bei 𝑥 = 𝐿 erreicht! Die Masse wird von der Feder
+solange weggedrückt, wie die Feder gestaucht ist, danach ändert sich die Richtung der Kraft.
+Die Beschleunigung der Masse ist gleich der Federkraft geteilt durch die Masse (𝑎 = 𝐹/𝑚).
+Sobald die Federkraft ihre Richtung ändert, wird die Geschwindigkeit nicht mehr vergrössert,
+sondern verkleinert.
+Die gesuchte Stauchung beziehungsweise Dehnung beträgt 0 cm; die Federlänge beträgt
+dann 40 cm. An diesem Punkt sind Kraft und Beschleunigung null, während die
+Geschwindigkeit maximal ist.
+e) Hier hilft der Energieerhaltungssatz. Bei der Ruhelänge 𝑥 = 𝐿 haben wir keinerlei
+Federenergie mehr. Die ursprüngliche Federenergie wird in kinetische Energie umgewandelt
+sein:
+𝑘
+2 (𝑥𝑠𝑡𝑎𝑟𝑡 − 𝐿)2 = 𝑚𝑣𝑚𝑎𝑥2
+2
+𝑣𝑚𝑎𝑥 = √ 𝑘
+𝑚 (𝑥𝑠𝑡𝑎𝑟𝑡 − 𝐿)2
+𝑣𝑚𝑎𝑥 = √5000 N/m
+2 kg · (−0.10 m)2 = 5 m/s
+
+-- 4 of 10 --
+
+5
+f) Die Feder wird wieder genau so weit gedehnt, bis alle Energie in der Feder steckt, also um
+10 cm. Die Federlänge wird zwischen 30 cm und 50 cm oszillieren.
+Aufgabe 7
+a) Wir wählen die positive x-Richtung nach rechts. Die Abstände von q₁ zu den beiden
+anderen Ladungen sind r₁₂ = 3 m und r₁₃ = 6 m. q₂ zieht q₁ nach rechts; q₃ stösst q₁ nach links
+ab.
+Für den Betrag jeder Einzelkraft gilt das Coulombgesetz. Erst anschliessend berücksichtigen
+wir die Richtung beim Addieren:
+|𝐹𝑗→1| = 1
+4𝜋𝜀0
+|𝑞1𝑞𝑗|
+𝑟1𝑗2 , 𝑘𝑒 = 1
+4𝜋𝜀0
+|𝐹2→1| = +8.99 · 109 N m²/C² · (6 · 10−6 C)(4 · 10−6 C)
+(3 m)2
+= +0.02397 N
+|𝐹3→1| = 8.99 · 109 N m²/C² · (6 · 10−6 C)(6 · 10−6 C)
+(6 m)2
+= 0.00899 N
+𝐹𝑟𝑒𝑠,𝑥 = 𝐹2→1 − 𝐹3→1 = 0.02397 N − 0.00899 N ≈ 0.01498 N
+Die resultierende Kraft beträgt ungefähr 0.0150 N = 15.0 mN und zeigt nach rechts.
+b) Die Schlussfolgerung ist falsch. Wir führen eine neue Konstante 𝐶 = 1
+4𝜋𝜖0
+|𝑞₁𝑞₂| ein.
+Damit wird der Betrag der Coulombkraft F:
+𝐹(𝑟) = 𝐶
+𝑟2 , 𝐹(2𝑟) = 𝐶
+(2𝑟)2 = 𝐹(𝑟)
+4 , 𝐹(3𝑟) = 𝐹(𝑟)
+9
+Beim doppelten Abstand beträgt die Kraft ein Viertel, beim dreifachen ein Neuntel. Sie ist
+umgekehrt proportional zum Quadrat des Abstandes. Bei umgekehrter Proportionalität zum
+Abstand wären es die Hälfte beziehungsweise ein Drittel.
+Dass eine Grösse abnimmt, wenn eine andere zunimmt, genügt nicht. Für 𝐹 ∝ 1/𝑟 wäre
+𝐹 ⋅ 𝑟 konstant; hier ist dagegen 𝐹 ⋅ 𝑟² konstant.
+
+-- 5 of 10 --
+
+6
+Aufgabe 8
+Ein Elektron trägt die Ladung −𝑒. Wechseln 𝑁 Elektronen von A nach B, verliert A negative
+Ladung und wird positiver. B nimmt negative Ladung auf und wird negativer:
+𝛥𝑄𝐴 = −𝑁(−𝑒), 𝛥𝑄𝐵 = +𝑁(−𝑒)
+𝛥𝑄𝑔𝑒𝑠𝑎𝑚𝑡 = 𝛥𝑄𝐴 + 𝛥𝑄𝐵 = 0
+Die Gesamtladung bleibt erhalten, sofern keine Ladung mit der Umgebung ausgetauscht
+wird. Bei anfangs neutralen Körpern ist A danach positiv und B gleich stark negativ geladen.
+Bei beliebigen Anfangsladungen bedeutet «positiver» nicht unbedingt «positiv».
+Aufgabe 9
+In dieser Aufgabe hat das Auto eine Anfangsgeschwindigkeit 𝑣, welche am Ende des
+Bremsvorganges auf null reduziert wurde. Die Beschleunigung (bzw. die Abbremsung)
+kompensiert also die gesamte zu Anfang vorhandene Geschwindigkeit. Wir können deshalb
+für 𝑣0 die Anfangsgeschwindigkeit einsetzen (𝑣0 = 𝑣 ) und erhalten für den Bremsweg:
+𝑠 = 𝑣2
+2|𝑎| (3)
+Damit ist klar, dass der Bremsweg proportional zum Quadrat der Geschwindigkeit ist. Aussage
+a) ist also falsch und Aussage b) richtig.
+c) Die kinetische Energie wird vor allem in innere Energie der Bremsen und der beteiligten
+Materialien umgewandelt; sie erwärmen sich. Je nach Bremsvorgang tragen auch
+Reifenverformung und Reibung an der Fahrbahn bei. Die Gesamtenergie bleibt erhalten.
+d) «Umgekehrt proportional» bedeutet, dass eine Grösse 𝑥 proportional zum Kehrwert einer
+anderen Grösse 𝑦 ist, also 𝑥 = 𝑘/𝑦 mit 𝑘 ≠ 0. Daraus folgt, dass die eine Grösse zwar
+abnimmt, wenn die andere Grösse zunimmt, aber den Wert 0 nie erreicht. (Mathematisch
+spricht man von der Asymptote einer Hyperbel). Da die Zeit, welche wir zur Abbremsung
+benützen, endlich ist, kann die kinetische Energie nicht umgekehrt proportional zur
+vergangenen Zeit sein. Wenn das Auto eine Geschwindigkeit von null erreicht, hat es auch die
+kinetische Energie gleich null. Wäre die kinetische Energie umgekehrt proportional zur Zeit,
+müsste sie nach einer endlichen Zeit immer noch einen endlichen Wert annehmen. Also ist
+auch Aussage d) falsch.
+Worum geht es in der Aufgabe? Sie sollen verstehen, wie man den Bremsweg berechnet. Dazu
+ist es nötig, die «BMS» - Formeln zu Ort, Geschwindigkeit, Zeit und Beschleunigung richtig zu
+interpretieren. In der Form, bis in der Tabelle vorliegen, geht man ja eigentlich davon aus, dass
+die Anfangsgeschwindigkeit null ist. Hier aber müssen wir von einer gegebenen
+Startgeschwindigkeit zur Geschwindigkeit null kommen.
+
+-- 6 of 10 --
+
+7
+Aufgabe 10
+Wie wir nächste Woche noch genauer sehen werden, ist Spannung definiert als Energie pro
+Ladung. Das bedeutet, die Energie, die ein Proton durch das Überwinden einer Spannung U
+aufnimmt, ist gleich
+𝛥𝐸 = 𝑞𝑈
+Die Protonenladung ist positiv: 𝑞 = 𝑒 = 1.6 · 10⁻¹⁹ 𝐶. Das Proton startet aus der Ruhe.
+Die abgegebene elektrische Energie wird vollständig in kinetische Energie umgewandelt:
+𝑚𝑣2
+2 = 𝑞𝑈 ⇒ 𝑣2 = 2𝑞𝑈
+𝑚 ⇒ 𝑣 = √2𝑞𝑈
+𝑚
+Nun setzen wir 𝑈 = 10 𝑉 und die vorgegebene Protonenmasse 𝑚 = 1.67 · 10⁻²⁷ 𝑘𝑔 ein:
+𝑣 = √2 · 1.6 · 10−19 C · 10 V
+1.67 · 10−27 kg ≈ 4.38 · 104 m/s
+Die Endgeschwindigkeit beträgt etwa 43 800 m/s. Zur Einheitenkontrolle: C · V = J und J/kg =
+m²/s². Nach dem Wurzelziehen erhält man daher m/s.
+Für die Interessierten: Das Proton nimmt eine Energie von qU = 1.6 · 10⁻¹⁸ J = 10 eV auf. Bei
+gleicher Beschleunigungsspannung wäre ein Elektron schneller, weil seine Masse wesentlich
+kleiner ist.
+Aufgabe 11
+Die Gravitationskraft zwischen zwei Massen mit dem Abstand r hat den Betrag:
+𝐹 = 𝐺 𝑚1𝑚2
+𝑟2
+Nach der Verdopplung beider Massen bezeichnen wir den gesuchten Abstand mit r′. Die
+neue Kraft soll gleich gross bleiben:
+𝐹′ = 𝐺 (2𝑚1)(2𝑚2)
+𝑟′2 = 4𝐺 𝑚1𝑚2
+𝑟′2 =
+! 𝐹
+Wir setzen die beiden Kraftausdrücke gleich und kürzen Gm₁m₂:
+4
+𝑟′2 = 1
+𝑟2 ⇒ 𝑟′2 = 4𝑟2 ⇒ 𝑟′ = 2𝑟
+Antwort b) ist richtig: Der Abstand muss sich verdoppeln. Zahlenwerte sind hier nicht
+erforderlich, weil nur das Verhältnis der Abstände gefragt ist.
+
+-- 7 of 10 --
+
+8
+Aufgabe 12
+a) Wir legen den Ursprung in den Abschusspunkt, die x-Achse horizontal und die y-Achse
+senkrecht nach oben. Die Anfangsgeschwindigkeit zeigt unter 45° nach rechts oben.
+Abschuss und Auftreffen erfolgen bei y = 0.
+𝑣0,𝑥 = 𝑣0 cos𝜑, 𝑣0,𝑦 = 𝑣0 sin𝜑
+𝑣0,𝑥 = 300 m
+s · cos45° = 212.13 m/s
+𝑣0,𝑦 = 300 m
+s · sin45° = 212.13 m/s
+Die horizontale Geschwindigkeit und die vertikale Beschleunigung der Kanonenkugel sind bei
+Vernachlässigung des Luftwiderstands konstant. Daher können wir die Gleichungen für
+gleichförmig beschleunigte Bewegungen anwenden, um Ort und Geschwindigkeit der Kugel
+in Abhängigkeit von der Zeit und der Beschleunigung auszudrücken. Wir berücksichtigen
+dabei, dass die vertikale und die horizontale Bewegung der Kugel voneinander unabhängig
+sind. Die vertikale Geschwindigkeit ist am höchsten Punkt null.
+b) Die vertikale Geschwindigkeit nimmt wegen der konstanten Beschleunigung 𝑎𝑦 = −𝑔
+linear ab. Am höchsten Punkt ist sie null:
+𝑣𝑦(𝑡) = 𝑣0,𝑦 + (−𝑔)𝑡, 0 = 𝑣0,𝑦 − 𝑔𝑡𝑚𝑎𝑥 ⇒ 𝑡𝑚𝑎𝑥 = 𝑣0,𝑦
+𝑔
+𝑡𝑚𝑎𝑥 = 300 m/s · sin45°
+9.81 m/s² ≈ 21.62 s
+c) Die maximale Höhe erhalten wir durch Einsetzen dieser Zeit in die Orts-Zeit-Gleichung
+𝑦(𝑡) = 𝑣0,𝑦𝑡 − 𝑔𝑡²/2. Dabei verwenden wir den ungerundeten Wert von 𝑡ₘₐₓ:
+ℎ𝑚𝑎𝑥 = 𝑣0,𝑦𝑡𝑚𝑎𝑥 − 𝑔𝑡𝑚𝑎𝑥2
+2
+ℎ𝑚𝑎𝑥 = (300 m
+s · sin45°) · 21.6241 s − 9.81 m/s² · (21.6241 s)2
+2 = 2294 m
+
+-- 8 of 10 --
+
+9
+d) Zur Energieprüfung wählen wir die potentielle Energie beim Abschuss gleich null. Am
+höchsten Punkt bleibt die horizontale Geschwindigkeit erhalten. Aus der
+Gesamtenergiebilanz folgt:
+𝑚𝑣02
+2 = 𝑚𝑔ℎ𝑚𝑎𝑥 + 𝑚𝑣0,𝑥2
+2 ⇒ ℎ𝑚𝑎𝑥 = 𝑣02 − 𝑣0,𝑥2
+2𝑔
+ℎ𝑚𝑎𝑥 = (300 m/s)2 − (300 m/s · cos45°)2
+2 · 9.81 m/s² ≈ 2294 m
+Alternativ genügt die vertikale Energiebilanz: 𝑚 𝑣0,𝑦
+2
+2 = 𝑚𝑔ℎₘₐₓ. Die horizontale kinetische
+Energie bleibt unverändert und kürzt sich aus der Gesamtbilanz heraus.
+e) Die Kugel trifft wieder auf der Abschusshöhe auf. Aufstieg und Abstieg dauern gleich lang:
+𝑡𝐹𝑙𝑢𝑔 = 2𝑡ₘₐₓ. Horizontal ist die Geschwindigkeit konstant, deshalb gilt:
+𝑅 = 𝑣0,𝑥𝑡𝐹𝑙𝑢𝑔 = 2𝑣0,𝑥𝑡𝑚𝑎𝑥
+𝑅 = (300 m
+s · cos45°) · (2 · 21.6241 s) = 9174 m
+Aufgabe 13
+Die Idee für Aufgabe a) ist, dass zum Zeitpunkt des Überholens Auto B 45 km mehr gefahren
+ist als Auto A. Wir kennen die Beziehung zwischen Geschwindigkeit 𝑣, Strecke 𝑠 und Zeit 𝑡 für
+den Fall, dass die Geschwindigkeit konstant bleibt:
+𝑠 = 𝑣𝑡 (4)
+Beachten Sie, dass diese Beziehung nur gilt, wenn sie mit konstanten Geschwindigkeiten
+arbeiten können! Wenn wir die Strecke, welche das Auto A gefahren ist, mit 𝑠 bezeichnen,
+dann ist am Punkt, bei welchem das Überholmanöver stattfindet, die vom Auto B
+zurückgelegte Strecke gleich 𝑠 + 45 km. Wir erhalten dann:
+𝑣𝐴𝑡 + 45 km = 𝑣𝐵𝑡 (5)
+Hierbei bezeichnet 𝑣𝑋 Geschwindigkeit des Autos X. Damit können wir nun den Zeitpunkt des
+Überholmanövers bestimmen:
+𝑡 = 45 km
+𝑣𝐵−𝑣𝐴
+= 1.5 h (6)
+Da Auto A anderthalb Stunden mit 80 km/h gefahren ist, bevor es von Auto B überholt wird,
+hat Auto A also eine Strecke von 120 km zurückgelegt.
+Um zu berechnen, welchen Vorsprung Auto B nach 30 Sekunden hat, muss man die Differenz
+der beiden nach dem Überholmanöver zurückgelegten Strecken berechnen:
+
+-- 9 of 10 --
+
+10
+𝑣𝐵𝑡 − 𝑣𝐴𝑡 = (𝑣𝐵 − 𝑣𝐴)𝑡 = 30 km
+h ⋅ 1
+120 h = 0.25 km (7)
+Beachten Sie, dass wir hier mit Kilometern und Stunden gerechnet haben (30 Sekunden sind
+eine 120stel Stunde)! Solange sie dies konstant durchhalten, können Sie in den Einheiten
+rechnen, die Ihnen am besten passen. Es zeigt sich allerdings, dass es eine gute Praxis ist,
+ausschliesslich die sogenannten SI-Einheiten zu verwenden.
+Worum geht es bei dieser Aufgabe? Sie sollen sich ein Bild des Prozesses machen und die
+wesentlichen Variablen und deren Zusammenhänge vor Augen führen. Der entscheidende
+Punkt ist, den beschriebenen Prozess auf die verwendeten Variablen abzubilden. Was bedeutet
+es formal für die verwendeten Grössen, wenn Auto B Auto A überholt? Beachten Sie, dass auch
+wenn sie sich nicht für Überholmanöver interessieren, die Fragestellung wie man Prozesse auf
+Variablen abbildet, eine Grundüberlegung in der Informatik ist.
+
+-- 10 of 10 --
+

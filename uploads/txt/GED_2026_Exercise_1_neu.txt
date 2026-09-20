@@ -1,0 +1,158 @@
+1
+ZHAW Zurich University of Applied Sciences
+GED Übung 1
+Zur Vorbereitung
+Aufgabe 1
+Einige Aufgaben zu den Ort-Zeit-Geschwindigkeits-Beschleunigungsformeln für konstante
+Beschleunigungen:
+a) Wenn Sie mit 60 km pro Stunde fahren, wieviel Meter legen Sie dann in einer Sekunde
+zurück?
+b) Nehmen Sie an, Sie starten aus dem Stillstand und beschleunigen mit 1 m/s2 bis Sie
+eine Geschwindigkeit von 60 km/h erreicht haben. Wie viele Meter haben Sie dann
+zurückgelegt?
+c) Nehmen Sie an, Sie lassen sich von einer 5 m hohen Brücke ohne
+Anfangsgeschwindigkeit ins Wasser fallen. Vernachlässigen Sie den Luftwiderstand.
+Mit welcher Geschwindigkeit prallen Sie aufs Wasser?
+Aufgabe 2
+Um welchen Faktor ändert sich die kinetische Energie eines Teilchens, wenn seine
+Geschwindigkeit verdoppelt, seine Masse aber halbiert wird?
+Aufgabe 3
+SSDs speichern Daten mithilfe elektrischer Ladungen. Wir betrachten ein vereinfachtes
+Modell einer Flash-Speicherzelle, die genau ein Bit speichert: Ohne zusätzliche Elektronen
+repräsentiert sie den Bitwert 0. Werden Elektronen in ihrem Speicherbereich eingelagert,
+repräsentiert sie den Bitwert 1.
+Nehmen Sie an, dass dafür (104) zusätzliche Elektronen eingelagert werden. Wie gross ist die
+Gesamtladung dieser Elektronen in Coulomb? Geben Sie auch das Vorzeichen an.
+Während der Übungsstunde
+Aufgabe 4
+(Aus Tipler und Mosca) Welche der v-t-Diagramme in Fig. 1 beschreiben am besten die
+Bewegung eines Teilchens? Mehrere Kurven können zu einer Teilaufgabe passen, geben Sie
+alle Kurven an, welche die Forderung der Teilaufgabe erfüllen.
+a) mit positiver Geschwindigkeit und zunehmendem Geschwindigkeitsbetrag,
+
+-- 1 of 5 --
+
+2
+b) mit positiver Geschwindigkeit und der Beschleunigung null,
+c) mit konstanter, von null verschiedener Beschleunigung bzw.
+d) mit abnehmendem Geschwindigkeitsbetrag?
+Fig. 1
+Aufgabe 5
+Ein Rennwagen, über den der Fahrer die Gewalt verloren hat, kann noch auf 90 km/h
+abgebremst werden, bevor er frontal auf eine Ziegelmauer auffährt. Zum Glück trägt der
+Fahrer einen Sicherheitsgurt. Nehmen Sie an, der Fahrer habe eine Masse von 70 kg und das
+Rennauto würde bis zum Stillstand über eine Strecke von 1 m zusammengedrückt
+(«Anhalteweg»).
+a) Berechnen Sie die beim Aufprall als konstant angenommene Kraft, die der
+Sicherheitsgurt auf den Fahrer ausübt, und geben Sie an, in welche Richtung diese Kraft
+wirkt. Wir nehmen an, dass Reibungskräfte zwischen dem Sitz und dem Fahrer
+vernachlässigbar sind.
+b) Berechnen Sie die Arbeit der Gurtkraft am Fahrer und vergleichen Sie sie mit der
+Änderung seiner kinetischen Energie.
+Aufgabe 6
+Eine Feder hat eine Federkonstante von 𝑘 = 5000 N/m und eine Ruhelänge 𝐿 von 40 cm. An
+der Feder ist eine Masse 𝑚 = 2 kg befestigt und die Feder ist horizontal ausgerichtet. Nun
+wird die Feder um 10 cm gestaucht. Für alle Teilaufgaben sind Reibung und andere
+Energieverluste zu vernachlässigen.
+a) Wieviel Energie ist dazu notwendig?
+b) Wenn die Masse losgelassen wird, wird sie beschleunigt. Ist das eine konstante
+Beschleunigung?
+c) Wie gross sind die Kraft und die Beschleunigung unmittelbar nach dem Loslassen?
+Geben Sie auch die Richtung an.
+
+-- 2 of 5 --
+
+3
+d) Wo (angegeben in cm Stauchung oder Dehnung) wird die Masse ihre maximale
+Geschwindigkeit 𝑣max erreicht haben?
+e) Wie gross wird 𝑣max sein?
+f) Wie stark wird die Feder gedehnt, bevor die Masse ihre Bewegungsrichtung ändert?
+Fig. 2
+Aufgabe 7 (A18.14)
+Drei Punktladungen befinden sich auf der x-Achse:
+• 𝑞1 = −6 μC bei 𝑥 = −3 m
+• 𝑞2 = 4 μC im Koordinatenursprung
+• 𝑞3 = −6 μC bei 𝑥 = 3 m
+a) Erstellen Sie eine Skizze und berechnen Sie den Betrag und die Richtung der
+resultierenden Kraft auf 𝑞1.
+b) Wir betrachten nur die Kraft zwischen den Ladungen (𝑞1) und (𝑞2). Die Ladungen
+bleiben unverändert.
+Eine Studentin behauptet: «Wenn der Abstand grösser wird, wird die Kraft kleiner.
+Deshalb ist der Kraftbetrag umgekehrt proportional zum Abstand.»
+Ist diese Schlussfolgerung richtig? Begründen Sie Ihre Antwort, indem Sie angeben,
+wie sich der Kraftbetrag bei einer Verdopplung und bei einer Verdreifachung des
+Abstandes verändert.
+Hinweis: Die resultierende Kraft berechnet sich aus der Summe aller Kraftvektoren, die auf
+𝑞1 wirken.
+Aufgabe 8
+Wenn Elektronen von Körper A nach B wechseln, welche Ladungsänderungen erfahren beide
+Körper und was geschieht mit ihrer Gesamtladung?
+
+-- 3 of 5 --
+
+4
+Selbststudium
+Aufgabe 9
+Nehmen Sie an, dass die Strasse beim Bremsen eine konstante Reibungskraft auf die Räder
+eines Autos ausübt. Welche der Aussagen a) und b) trifft dann zwangsläufig zu? Beurteilen
+und begründen Sie diese Aussage.
+a) Der Bremsweg ist proportional zur Geschwindigkeit, die das Auto hatte, bevor die
+Bremsung eingeleitet wurde.
+b) Der Bremsweg ist proportional zum Quadrat der Geschwindigkeit, die das Auto hatte,
+bevor die Bremsung eingeleitet wurde.
+c) Wohin geht die kinetische Energie beim Bremsen?
+d) Die kinetische Energie des Autos ist umgekehrt proportional zu der Zeit, die seit Beginn
+des Bremsens vergangen ist.
+Hinweis: Überlegen Sie, wie gross die kinetische Energie im Verlauf der Zeit ist
+(machen Sie eine Skizze). Wie gross ist dann die Energie beim Stillstand des Autos und
+danach? Entspricht dieser Verlauf einem umgekehrt proportionalen Zusammenhang?
+Aufgabe 10
+Ein Proton wird durch eine elektrische Spannung 𝑈 = 10 V beschleunigt. Wenn das Proton
+zu Beginn in Ruhe war, wie schnell wird es nach der Beschleunigungsphase sein? Die Masse
+des Protons beträgt 1.67 ⋅ 10−27 𝑘𝑔.
+Hinweis: Berechnen Sie die Endgeschwindigkeit über die Energieerhaltung. Verwenden Sie
+für den Energiegewinn Δ𝐸𝑘𝑖𝑛 = 𝑞 ⋅ 𝑈, wobei 𝑞 = 𝑒 = 1.6 ⋅ 10−19 𝐶 (Elementarladung) ist.
+Aufgabe 11 (A4.5)
+Zwei Sterne, die ihren gemeinsamen Massenmittelpunkt umkreisen, werden als
+Doppelsternsystem bezeichnet. Was müsste mit ihrem Abstand geschehen, wenn die Masse
+jedes der beiden Sterne verdoppelt würde, aber dieselbe Gravitationskraft herrschen soll?
+Ihr Abstand müsste
+a) gleich bleiben,
+b) sich verdoppeln,
+c) sich vervierfachen,
+d) sich halbieren.
+e) Mit den Angaben ist eine Antwort nicht möglich.
+Aufgabe 12 (A2.45)
+Eine Kanone ist auf einen Abschusswinkel von 𝜑 = 45 ° gegenüber der Horizontalen
+eingestellt. Sie feuert eine Kugel mit einer Geschwindigkeit von 300 m/s ab. Die vektorielle
+Anfangsgeschwindigkeit (𝑥 horizontal, 𝑦 senkrecht nach oben) beträgt somit
+
+-- 4 of 5 --
+
+5
+𝑣⃗0 = |𝑣⃗0| (cos(𝜑)
+sin(𝜑)) = 𝑣0 (cos(𝜑)
+sin(𝜑)) = (𝑣0 cos(𝜑)
+𝑣0 sin(𝜑)) = (𝑣0,𝑥
+𝑣0,𝑦).
+Abschuss- und Auftreffpunkt liegen auf gleicher Höhe. Der Luftwiderstand wird
+vernachlässigt.
+a) Erstellen Sie eine Skizze der Situation und zeichnen Sie das Koordinatensystem und
+die Anfangsgeschwindigkeit ein.
+b) Berechnen Sie die Zeit, bis die Kugel ihre maximale Höhe erreicht hat.
+c) Welche maximale Höhe erreicht die Kugel?
+d) Überprüfen Sie die maximale Höher zusätzlich mit der Energieerhaltung. Hinweis:
+Betrachten Sie entweder die gesamte Energie beim Abschuss oder nur die Energie in
+vertikaler Richtung.
+e) Welche horizontale Reichweite hat die Kanone?
+Zusatzaufgaben
+Aufgabe 13
+Zwei Autos fahren auf einer geraden Strasse. Das Auto A fährt mit der konstanten
+Geschwindigkeit 80 km/h, das Auto B mit der ebenfalls konstanten Geschwindigkeit 110 km/h.
+Zum Zeitpunkt 𝑡 = 0 ist das Auto B 45 km hinter dem Auto A zurück.
+a) Wie weit ist das Auto A gefahren, wenn es vom Auto B überholt wird?
+b) Welchen Vorsprung vor dem Auto A erreicht das Auto B innerhalb von 30 s nach dem
+Überholen?
+
+-- 5 of 5 --
+

@@ -1,0 +1,9 @@
+*.aux
+*.fdb_latexmk
+ged-spick.log
+*.gz
+*.fls
+*/uploads
+*doc-page.js
+*.log
+*.js
